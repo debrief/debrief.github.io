@@ -19,7 +19,7 @@ section:
     img_first: true
     btn: true
     btn_margin: mt-5
-    link: https://java.com/inc/BrowserRedirect1.jsp?locale=en
+    link: https://adoptium.net/en-GB/
     icon: 'fas fa-link'
     btn_name: 'Get Java'
     image: ../assets/images/Get-Java.png
