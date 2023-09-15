@@ -52,7 +52,7 @@ section:
     img_first: false
     btn: true
     btn-margin: mt-5
-    link: http://deepbluec.com/debrief-support/
+    link: https://deepbluecltd.github.io/debrief-support
     icon: 'far fa-life-ring'
     btn_name: 'Support from Deep Blue C'
     image: ../assets/images/sofware-installer-513x400.png
