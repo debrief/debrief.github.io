@@ -62,7 +62,6 @@ This proposal sets out the strategic case for a browser-based replacement, align
 gantt
   title Debrief Modernisation Timeline
   dateFormat  YYYY-MM
-  axisFormat  YYYY-MM
   section Foundation (NATO Project)
   UI Prototype        :done,    des1, 2025-06, 1m
   Backend Setup       :done,    des2, 2025-08, 1m
