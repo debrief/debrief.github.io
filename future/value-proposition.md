@@ -74,7 +74,7 @@ gantt
   section Advanced Features
   Collaboration Layer :         adv1,  2026-02, 2M
   Data Sync + Provenance:       adv2,  2026-04, 2M
-  LLM Supervistor: llm1. 2026-06. 2M
+  LLM Supervisor: llm1, 2026-06, 2M
 ```
 ---
 
