@@ -12,8 +12,8 @@ This document outlines the proposed technical architecture for replacing the leg
 - **Browser-first, Electron-optional** model
 - **Separation of data and visualisation state** for flexible collaboration
 - **Hybrid data model**: File-based (SQLite/JSON) or centralised via STAC server
-- **Modular backend** services for authentication, project/session logic, spatial queries, RAP execution, and AI orchestration
-- **Runtime extensibility** for UI plugins and Modular Command Plugins (MCPs)
+- **Modular backend** services for authentication, project/session logic, spatial queries, RAP execution, and orchestration of Model Context Protocol (MCP) agents
+- **Runtime extensibility** for UI plugins and dynamically loaded features
 
 ---
 
@@ -22,11 +22,11 @@ This document outlines the proposed technical architecture for replacing the leg
 ### 🖥 Client UI
 - Built in **React**, deployable via browser or Electron
 - Supports:
-  - Feature-rich timeline and spatial viewer
+  - Timeline and spatial viewer
   - Scenario-specific UIs for short-term NATO-style deployments
-  - Presence and collaborative edit indicators
-  - RJSF-based dynamic forms for plugin input
-  - Plugin manifest support for loading remote UI components
+  - Presence and collaborative editing indicators
+  - RJSF-based dynamic forms for MCP agent input
+  - Plugin manifest system for runtime UI extension
 
 ### 🧠 Backend Services
 - API Gateway for routing and access control
@@ -34,145 +34,129 @@ This document outlines the proposed technical architecture for replacing the leg
   - Authentication (PKI, OIDC)
   - Project/session manager
   - Timeline and serial tracker
-  - Comments and threaded review tools
-  - Exporter (ZIP package, KML, CSV, Storyboard, dynamic PPT)
+  - Comments and review system
+  - Export engine (GeoJSON, ZIP, KML, CSV, storyboard, dynamic PPT)
   - Collaboration manager (presence, locking)
   - Audit log and provenance tracker
 
-### 🌍 Spatial & Central Server
-- **STAC server** acts as the centralised store for:
-  - Tracks
-  - Annotations
-  - Temporal datasets
-- Provides:
-  - SpatioTemporal indexing
-  - Metadata tagging
-  - Support for GeoJSON FeatureCollections
-- Backed by **pygeoapi** or compatible STAC implementation
-
-### 🔄 Data Storage Model
-- **Hybrid support**:
-  - File-based (SQLite/JSON) with OS-level permissions (ideal for Electron/offline)
-  - Centralised STAC server (for shared or collaborative environments)
-- Data provenance and audit logs are embedded inline with project data
-
 ---
 
-## 🔹 Modular Command Plugins (MCPs)
+## 🌍 Spatial & Central Server
 
-- Initially **HTTP REST microservices**
-- Long-term: Orchestrated by **LLM-based supervisor**
-- Can access STAC records and session/project state
-- Accept config inputs (via RJSF), return enriched data or annotations
-- Internal use of Python permitted, but hidden from user
-
----
-
-## 🔹 AI & LLM Roles
-
-- LLM supervises and composes MCPs into analytical workflows
+- Centralised store implemented using a **STAC server**
+- Tracks, annotations, and temporal data stored as SpatioTemporal assets
+- Accessed via pygeoapi or similar
 - Supports:
-  - Track summarisation
-  - Detection of data inconsistencies
-  - Repetitive formatting automation
-  - Chat-based analytical assistant
-- LLM not maritime-trained, but empowers analyst hypothesis generation
+  - Spatio-temporal queries
+  - Searchable metadata
+  - Integration with base layers, METOC, bathymetry
 
 ---
 
-## 🔹 Provenance & Audit Strategy
+## 🔄 Data Storage Model
 
-- **Audit logs** are not for security, but traceability
-- Stored **inline with data**
+- **File-based** mode: JSON/SQLite on disk with OS-level permissions (used offline or in Electron)
+- **Centralised STAC** mode: shared access and versioning in networked deployments
+- Provenance and audit trails are stored **inline** with project data
+
+---
+
+## 🧠 Model Context Protocol (MCP) Agents
+
+- Individual analysis tools or transformations are implemented as **MCP agents**
+- MCP agents are:
+  - Independently deployable (via REST APIs)
+  - Accept configuration via forms or manifest files
+  - Access spatial server data and session/project state
+  - Hidden implementation detail (may use Python or other languages internally)
+
+- An **LLM supervisor**:
+  - Selects and composes MCP agents to deliver analytical workflows
+  - Acts as a planner or assistant, not a domain expert
+  - May auto-suggest pipelines or review inconsistencies
+
+---
+
+## 🔐 Provenance & Audit Strategy
+
+- **Audit logs** are non-security and embedded with data
 - Log:
   - All edits
-  - Reason for changes (optional)
-  - Author and timestamp
-
-- **Provenance** tracks:
-  - Source metadata, optional checksums
-  - Tools and parameters used per transformation
-  - Stored at the **GeoJSON Feature level**
-  - Supports forks in data derivation history (e.g., duplicate plots)
-  - Analysts/reviewers can view **history trees**
+  - Reasons for edits (optional)
+  - Author/timestamp
+- **Provenance** recorded at GeoJSON Feature level:
+  - Tracks, zones, timestamped events
+  - Source, tools, parameters
+  - Supports forks (e.g., duplicate plots after transformation)
+  - Analysts and reviewers can see full **history trees**
 
 ---
 
-## 🔹 Reproducible Analytical Pipelines (RAP)
+## 🔁 Reproducible Analytical Pipelines (RAP)
 
-- Declarative pipelines
-- Support execution in UI ("Run saved workflow")
+- RAPs are **declarative**, not code-based
 - Store:
-  - Transformation steps
-  - Config parameters
-  - Commit ID of invoked code
+  - Sequence of transformations
+  - Parameters used
+  - Code version/commit ID (for external MCP agents)
 
-- Stored as:
-  - Named reusable templates
-  - Exportable formats
-- Forkable on modification
-- **Pipeline Processor** as separate module (can auto-run workflows on new data)
+- Features:
+  - Re-run on new input
+  - Ad-hoc tuning (with forking of pipeline)
+  - Saved as named templates
+  - Exportable for external tools
+
+- Optional “pipeline processor” module:
+  - Runs RAPs automatically on data from folders or feeds
+  - Interchangeable with analyst-created pipelines in Debrief
 
 ---
 
-## 🔹 Export & Reporting
+## 📤 Export & Reporting
 
-- Manual export only (no scheduled jobs)
-- Outputs:
+- **Manually triggered only**
+- Supported formats:
   - GeoJSON / KML
   - CSV (optional)
-  - Storyboard ZIPs (with data, thin viewer, backdrop, optional transitions)
-  - Skeleton PowerPoint briefings with:
-    - Timed slides
-    - Track keys
-    - Important event summary
-- Dynamic PPT as fallback when JS-blocked in secure transfers
+  - Static viewer ZIP bundles with:
+    - Data
+    - Thin timeline UI
+    - Optional base layers
+    - Optional storyboard (pan/zoom transitions)
+  - Skeleton PowerPoint briefs with:
+    - Slide-per-event
+    - Track legends
+    - Important event tables
+  - **Dynamic PPT** alternative when JS is blocked in defence networks
 
 ---
 
-## 🔹 Collaboration Model
+## 🤝 Collaboration Model
 
-- Mixed model:
-  - Shared **data** state
-  - Author-controlled **visualisation** state
-  - Optional “follow” mode for synced view
-- **Pessimistic locking** at FeatureCollection level (1 editor, many viewers)
-- **Serial ownership** model:
-  - Scoped timeline control
-  - Ownership handover
-  - Status tracking (e.g., “in analysis”, “published”)
+- **Mixed** real-time/asynchronous model:
+  - Shared data updates
+  - Independent visualisation state unless in “follow mode”
+- **FeatureCollection-level locking**: One editor, many viewers
+- **Serial ownership**:
+  - Users “own” time periods
+  - Ownership can transfer
+  - Status tracked: not started → in analysis → reviewed → published
 - **Presence**:
-  - Shown per datafile as lozenges
-  - Editable state marked visually
-  - Others may request ownership
+  - Shown per datafile (as lozenges)
+  - Indicates owner and viewers
 - **Annotations**:
-  - Spatial, temporal, callout types
-  - Created as private or public
-  - Public annotations editable by others
-- **Comments**:
-  - Threaded, tagged, statused
-  - Can be attached to: projects, serials, tracks, annotations
-  - Visible to all
+  - Private or public
+  - Public annotations are editable
+- **Asynchronous comments**:
+  - Threaded, tagged, status-aware
+  - Can attach to project, serial, track, or annotation
   - Dashboard flags unresolved comments
 
 ---
 
-## 🔹 Timeline of Development
+## 🔮 Future Considerations
 
-```mermaid
-gantt
-  title Debrief Modernisation Timeline
-  dateFormat  YYYY-MM
-  section Foundation (NATO Project)
-  UI Prototype        :    des1, 2025-06, 1M
-  Backend Setup       :    des2, 2025-06, 1M
-  Implementation      :    des3, 2025-07, 3M
-  Trials              :    des4, 2026-02, 2M
-  Delivery: milestone, m1, 2026-04, 1d
-  section MOD Adoption
-  Core Feature Rewrite:    feat1, 2025-10, 3M
-  MOD Deployment Prep :    feat2, 2026-01, 2M
-  section Advanced Features
-  Collaboration Layer :    adv1,  2026-03, 2M
-  Data Sync + Provenance:  adv2,  2026-05, 2M
-  LLM Supervisor:          llm1, 2026-07, 2M
+- Push-based workflows: analyst notifications on new track availability
+- Mermaid state diagrams for collaboration workflows
+- Plugin manifests for runtime UI injection
+- Support for sandboxed UI extensions via Shadow DOM or iframes
