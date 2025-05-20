@@ -44,7 +44,7 @@ This proposal sets out the strategic case for a browser-based replacement, align
 
 | User Group | Benefits from Rewrite |
 |------------|------------------------|
-| **RN Analysts (OAC, Collingwood)** | Easier deployment on MODNET; collaborative timelines; long-term data management |
+| **RN Analysts** | Easier deployment on MODNET; collaborative timelines; long-term data management |
 | **DSTL Researchers** | Support for reproducible pipelines, centralised datasets, and access to code-wrapped algorithms |
 | **UK Industry (e.g. sonar vendors)** | Data standardisation improves tech transfer and review processes |
 | **NATO (potential user group)** | The NATO group familiar with Debrief previously found it too complex — a simplified, browser-based version could lower adoption barriers and support short-term analysts (e.g., 2-week exercise roles) |
