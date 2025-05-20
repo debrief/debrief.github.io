@@ -63,8 +63,10 @@ gantt
   title Debrief Modernisation Timeline
   dateFormat  YYYY-MM
   section Foundation (NATO Project)
-  UI Prototype        :done,    des1, 2025-06, 1m
-  Backend Setup       :done,    des2, 2025-08, 1m
+  UI Prototype        :active,    des1, 2025-06, 1m
+  Backend Setup       :,    des2, 2025-08, 1m
+  Delivery       :,    des2, 2025-11, 1m
+  Trials       :,    des2, 2026-03, 1m
   section MOD Adoption
   Core Feature Rewrite:active,  feat1, 2025-10, 3m
   MOD Deployment Prep :         feat2, 2025-12, 2m
