@@ -68,6 +68,8 @@ This proposal sets out the strategic case for a browser-based replacement, align
 - Stakeholder interest already exists within **DSTL** and the **Operational Advantage Centre (RN)**  
 - This is a low-risk, high-leverage moment to initiate funding exploration — with technical prototypes already in hand
 
+## 🔹 Project Timeline
+
 ``` mermaid
 gantt
     title Project Timeline
