@@ -70,11 +70,11 @@ gantt
   Delivery: milestone, m1, 2026-04, 1d
   section MOD Adoption
   Core Feature Rewrite:  feat1, 2025-10, 3M
-  MOD Deployment Prep :         feat2, 2025-12, 2M
+  MOD Deployment Prep :         feat2, 2026-01, 2M
   section Advanced Features
-  Collaboration Layer :         adv1,  2026-02, 2M
-  Data Sync + Provenance:       adv2,  2026-04, 2M
-  LLM Supervisor: llm1, 2026-06, 2M
+  Collaboration Layer :         adv1,  2026-03, 2M
+  Data Sync + Provenance:       adv2,  2026-05, 2M
+  LLM Supervisor: llm1, 2026-07, 2M
 ```
 ---
 
