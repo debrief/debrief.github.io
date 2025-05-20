@@ -1,21 +1,5 @@
 # 🛠 Technical Strategy: Debrief Rewrite Project
 
-## 📑 Table of Contents
-- [🔹 Overview](#-overview)
-- [🔹 Core Architectural Principles](#-core-architectural-principles)
-- [🔹 Component Breakdown](#-component-breakdown)
-  - [🖥 Client UI](#-client-ui)
-  - [🧠 Backend Services](#-backend-services)
-  - [🌍 Spatial Server](#-spatial-server)
-  - [🔄 Data Storage Model](#-data-storage-model)
-- [🔹 Modular Command Plugins (MCPs)](#-modular-command-plugins-mcps)
-- [🔹 AI & LLM Roles](#-ai--llm-roles)
-- [🔹 Provenance & Audit Strategy](#-provenance--audit-strategy)
-- [🔹 Reproducible Analytical Pipelines (RAP)](#-reproducible-analytical-pipelines-rap)
-- [🔹 Export & Reporting](#-export--reporting)
-- [🔹 Collaboration Model](#-collaboration-model)
-- [🔹 Timeline of Development](#-timeline-of-development)
-
 ## 🔹 Overview
 
 This document outlines the proposed technical architecture for replacing the legacy Java-based Debrief maritime analysis tool with a modern, modular browser-based platform. The design balances operational resilience, extensibility, and support for collaborative and reproducible analysis workflows.
@@ -27,7 +11,7 @@ This document outlines the proposed technical architecture for replacing the leg
 - **React-based frontend** for maintainability and modular extension
 - **Browser-first, Electron-optional** model
 - **Separation of data and visualisation state** for flexible collaboration
-- **Hybrid data model**: File-based (SQLite/JSON) or centralised server (PostgreSQL)
+- **Hybrid data model**: File-based (SQLite/JSON) or centralised via STAC server
 - **Modular backend** services for authentication, project/session logic, spatial queries, RAP execution, and AI orchestration
 - **Runtime extensibility** for UI plugins and Modular Command Plugins (MCPs)
 
@@ -55,17 +39,22 @@ This document outlines the proposed technical architecture for replacing the leg
   - Collaboration manager (presence, locking)
   - Audit log and provenance tracker
 
-### 🌍 Spatial Server
-- Uses **GeoServer** or **pygeoapi**
-- Hosts base layers, authoritative datasets
-- Supports spatial queries (buffer, intersect)
-- Serves external datasets (e.g., METOC, bathymetry)
+### 🌍 Spatial & Central Server
+- **STAC server** acts as the centralised store for:
+  - Tracks
+  - Annotations
+  - Temporal datasets
+- Provides:
+  - SpatioTemporal indexing
+  - Metadata tagging
+  - Support for GeoJSON FeatureCollections
+- Backed by **pygeoapi** or compatible STAC implementation
 
 ### 🔄 Data Storage Model
-- **Hybrid support** for file-based and centralised modes:
-  - File-based: SQLite/JSON with OS-level permissions (default in deployed/Electron use)
-  - Centralised: PostgreSQL for shared, permissioned datasets
-- Data provenance and audit logs stored inline with project data
+- **Hybrid support**:
+  - File-based (SQLite/JSON) with OS-level permissions (ideal for Electron/offline)
+  - Centralised STAC server (for shared or collaborative environments)
+- Data provenance and audit logs are embedded inline with project data
 
 ---
 
@@ -73,7 +62,7 @@ This document outlines the proposed technical architecture for replacing the leg
 
 - Initially **HTTP REST microservices**
 - Long-term: Orchestrated by **LLM-based supervisor**
-- Can access spatial data and project/session state
+- Can access STAC records and session/project state
 - Accept config inputs (via RJSF), return enriched data or annotations
 - Internal use of Python permitted, but hidden from user
 
