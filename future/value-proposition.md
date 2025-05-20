@@ -1,5 +1,15 @@
 # 🧭 Strategic Value Proposition: Replacing Debrief with a Modern, Web-Based Analysis Platform
 
+## 📑 Table of Contents
+- [🔹 Executive Summary](#-executive-summary)
+- [🔹 Why Modernisation is Urgent](#-why-modernisation-is-urgent)
+- [🔹 Strategic Alignment with MOD Priorities](#-strategic-alignment-with-mod-priorities)
+- [🔹 Value to Core Users](#-value-to-core-users)
+- [🔹 New Capabilities the Rewrite Enables](#-new-capabilities-the-rewrite-enables)
+- [🔹 Readiness and Opportunity](#-readiness-and-opportunity)
+- [🔹 Project Timeline](#-project-timeline)
+- [🔹 Recommended Next Steps](#-recommended-next-steps)
+
 ## 🔹 Executive Summary  
 Debrief is a powerful but ageing maritime analysis tool used across the Royal Navy, DSTL, and UK industry. While it continues to offer domain-relevant capabilities, its Java-based desktop architecture imposes increasing limitations on adoption, collaboration, maintainability, and integration.
 
