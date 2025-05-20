@@ -64,11 +64,11 @@ gantt
   dateFormat  YYYY-MM
   section Foundation (NATO Project)
   UI Prototype        :active,    des1, 2025-06, 1m
-  Backend Setup       :,    des2, 2025-08, 1m
-  Delivery       :,    des2, 2025-11, 1m
-  Trials       :,    des2, 2026-03, 1m
+  Backend Setup       :    des2, 2025-08, 1m
+  Delivery       :    des3, 2025-11, 1m
+  Trials       :    des4, 2026-03, 1m
   section MOD Adoption
-  Core Feature Rewrite:active,  feat1, 2025-10, 3m
+  Core Feature Rewrite:  feat1, 2025-10, 3m
   MOD Deployment Prep :         feat2, 2025-12, 2m
   section Advanced Features
   Collaboration Layer :         adv1,  2026-02, 2m
