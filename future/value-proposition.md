@@ -61,16 +61,16 @@ This proposal sets out the strategic case for a browser-based replacement, align
 ``` mermaid
 gantt
   title Debrief Modernisation Timeline
-  dateFormat  YYYY-MM
+  dateFormat  YYYY-QQ
   section Foundation (NATO Project)
-  UI Prototype        :done,    des1, 2025-06, 1m
-  Backend Setup       :done,    des2, 2025-06, 1m
+  UI Prototype        :done,    des1, 2025-Q2, 1m
+  Backend Setup       :done,    des2, 2025-Q2, 1m
   section MOD Adoption
-  Core Feature Rewrite:active,  feat1, 2025-07, 3m
-  MOD Deployment Prep :         feat2, 2025-10, 2m
+  Core Feature Rewrite:active,  feat1, 2025-Q3, 3m
+  MOD Deployment Prep :         feat2, 2025-Q4, 2m
   section Advanced Features
-  Collaboration Layer :         adv1,  2025-11, 2m
-  Data Sync + Provenance:       adv2,  2026-01, 2m
+  Collaboration Layer :         adv1,  2026-Q1, 2m
+  Data Sync + Provenance:       adv2,  2026-Q2, 2m
 ```
 ---
 
