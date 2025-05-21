@@ -72,7 +72,7 @@ This proposal sets out the strategic case for a browser-based replacement, align
 
 - A NATO-funded engagement begins within ~1 month, involving a “mini-Debrief” built with modern components  
 - That work may seed the backend infrastructure and UI libraries for the full rewrite  
-- Stakeholder interest already exists within **DSTL** and the **Operational Advantage Centre (RN)**  
+- Stakeholder interest already exists within **DSTL** and the **RN**  
 - This is a low-risk, high-leverage moment to initiate funding exploration — with technical prototypes already in hand
 
 ## 🔹 Project Timeline
