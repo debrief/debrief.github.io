@@ -48,3 +48,12 @@ nav:
   - name: Blog
     link: /blog/
     id: NavlinkBlog
+  - name: Future
+    link: /#
+    id: NavlinkFuture
+    dropdown: true
+    subnav:
+      - name: Value Proposition
+        link: /future/value-proposition.html
+      - name: Technical Strategy
+        link: /future/technical-strategy.html
