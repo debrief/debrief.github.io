@@ -1,3 +1,11 @@
+---
+layout: post
+key: blog
+title: "Strategic Value Proposition: Replacing Debrief with a Modern, Web-Based Analysis Platform"
+date: 2025-05-21
+tags: [Mermaid]
+mermaid: true
+---
 # 🧭 Strategic Value Proposition: Replacing Debrief with a Modern, Web-Based Analysis Platform
 
 ## 📑 Table of Contents
@@ -70,7 +78,7 @@ This proposal sets out the strategic case for a browser-based replacement, align
 
 ## 🔹 Project Timeline
 
-``` mermaid
+<div class="mermaid">
 gantt
     title Project Timeline
     dateFormat  YYYY-MM
@@ -93,7 +101,7 @@ gantt
     Collaboration Layer :    adv1, after m2, 2M
     Data Sync + Provenance: adv2, after adv1, 2M
     LLM Supervisor      :    llm1, after adv2, 2M
-```
+</div>
 ---
 
 ## 🔹 Recommended Next Steps
