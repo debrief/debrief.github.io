@@ -1,5 +1,6 @@
 ---
-key: blog
+layout: page
+title: "Strategic Value Proposition: Replacing Debrief with a Modern, Web-Based Analysis Platform"
 date: 2025-05-21
 tags: [Mermaid]
 mermaid: true
