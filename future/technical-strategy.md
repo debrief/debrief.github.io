@@ -1,4 +1,10 @@
-# 🛠 Technical Strategy: Debrief Rewrite Project
+---
+layout: page
+title: "Technical Strategy: Debrief Rewrite Project"
+date: 2025-05-21
+tags: [Mermaid]
+mermaid: true
+---
 
 ## 🔹 Overview
 
