@@ -5,7 +5,6 @@ date: 2025-05-21
 tags: [Mermaid]
 mermaid: true
 ---
-# 🧭 Strategic Value Proposition: Replacing Debrief with a Modern, Web-Based Analysis Platform
 
 ## 📑 Table of Contents
 - [🔹 Executive Summary](#-executive-summary)
