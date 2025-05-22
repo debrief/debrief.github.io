@@ -76,6 +76,40 @@ The system is designed to operate in multiple deployment contexts:
 14. [LLM Supervisor](sub-systems/llm_supervisor.html)
 15. [MCP Agent Registry](sub-systems/mcp_agent_registry.html)
 
+<div class="mermaid">
+
+architecture-beta
+    group core(server)[Core]
+
+    service db(database)[Client UI] in core
+    service disk1(disk)[Data store] in core
+    service disk2(internet)[Import service] in core
+    service server(internet)[Export service] in core
+    service pipes(server)[Pipeline Engine] in core
+
+    group subs(Internet)[Subsystems]
+
+    group llm(internet)[LLM] in subs
+    service l1(cloud)[LLM Supervisor] in llm
+    service l2(cloud)[MCP Agent Registry] in llm
+
+    group shared(internet)[Shared] in subs
+
+    service d8(database)[Platform Library] in shared
+    service d11(server)[Pipeline Processor] in shared
+    service d12(database)[STAC Server] in shared
+
+
+    group collab(internet)[Collaborative] in subs
+
+    service d13(server)[Authentication] in collab
+    service d6(server)[Commenting] in collab
+    service d7(server)[Presence Locking] in collab
+    service d9(cloud)[Analysis Dashboard] in collab
+    service d10(database)[Wargame Metadata] in collab
+
+</div>
+
 Each sub-system may be deployed independently based on operational needs.
 
 ---
