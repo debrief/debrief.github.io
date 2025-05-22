@@ -5,6 +5,7 @@ date: 2025-05-21
 tags: [Mermaid]
 mermaid: true
 ---
+
 ## 1. Vision and Scope
 
 The Debrief rewrite project aims to modernise the existing Java-based desktop application into a modular, browser-first platform. The new architecture will improve:
@@ -48,37 +49,32 @@ The system is designed to operate in multiple deployment contexts:
 
 ## 3. Sub-System Summary
 
-<div class="mermaid">
-architecture-beta
-    group core(server)[Core]
+### Core Sub-Systems
 
-    service db(database)[Client UI] in core
-    service disk1(disk)[Data store] in core
-    service disk2(internet)[Import service] in core
-    service server(internet)[Export service] in core
-    service pipes(server)[Pipeline Engine] in core
+1. [Client UI](sub-systems/client_ui.html)
+2. [STAC Server (Static / File-Based)](sub-systems/stac_server_static_file_based.html)
+3. [Import Service](sub-systems/import_service.html)
+4. [Export Service](sub-systems/export_service.html)
+5. [Pipeline Engine](sub-systems/pipeline_engine.html)
 
-    group subs(Internet)[Subsystems]
+### Shared Services
 
-    group llm(internet)[LLM] in subs
-    service l1(cloud)[LLM Supervisor] in llm
-    service l2(cloud)[MCP Agent Registry] in llm
+6. [Platform Library](sub-systems/platform_library.html)
+7. [Pipeline Processor](sub-systems/pipeline_processor.html)
+8. [STAC Server (Dynamic / Server-Based)](sub-systems/stac_server_dynamic_server_based.html)
 
-    group shared(internet)[Shared] in subs
+### Collaborative Services
 
-    service d8(database)[Platform Library] in shared
-    service d11(server)[Pipeline Processor] in shared
-    service d12(database)[STAC Server] in shared
+9. [Authentication](sub-systems/authentication.html)
+10. [Commenting](sub-systems/commenting.html)
+11. [Presence Locking](sub-systems/presence_locking.html)
+12. [Analysis Dashboard](sub-systems/analysis_dashboard.html)
+13. [Wargame Metadata](sub-systems/wargame_metadata.html)
 
+### AI Supervision
 
-    group collab(internet)[Collaborative] in subs
-
-    service d13(server)[Authentication] in collab
-    service d6(server)[Commenting] in collab
-    service d7(server)[Presence Locking] in collab
-    service d9(cloud)[Analysis Dashboard] in collab
-    service d10(database)[Wargame Metadata] in collab
-</div>
+14. [LLM Supervisor](sub-systems/llm_supervisor.html)
+15. [MCP Agent Registry](sub-systems/mcp_agent_registry.html)
 
 Each sub-system may be deployed independently based on operational needs.
 
