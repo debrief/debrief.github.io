@@ -5,274 +5,146 @@ date: 2025-05-21
 tags: [Mermaid]
 mermaid: true
 ---
+## 1. Vision and Scope
 
-## 🔹 Overview
+The Debrief rewrite project aims to modernise the existing Java-based desktop application into a modular, browser-first platform. The new architecture will improve:
 
-This document defines the technical architecture for replacing the legacy Java-based Debrief application with a modular, browser-based platform. The architecture supports collaborative workflows, reproducible pipelines, AI integration, and long-term adaptability across secure MOD environments.
+* Maintainability and developer onboarding
+* Integration with MOD digital infrastructure (cloud, identity, security)
+* Support for collaboration and distributed workflows
+* Reproducibility through pipeline capture (RAP)
+* Extensibility through AI plugins and modular tools
 
----
+The system is designed to operate in multiple deployment contexts:
 
-## 🔹 Core Principles
-
-- **React-based frontend** (browser-first, Electron-optional)
-- **Modular, service-oriented backend**
-- **Hybrid data storage model** (local SQLite/JSON + central STAC server)
-- **Provenance and audit support** for reproducible analysis
-- **Model Context Protocol (MCP) agents**, orchestrated by LLM supervisor
-- **Runtime UI extensibility** via plugin manifests and dynamic forms
-
----
-
-## 🔹 Client UI
-
-- Timeline, spatial viewer, RJSF-based dynamic forms
-- Private/public annotations; threaded review comments
-- FeatureCollection-level presence and pessimistic locking
-- Role-based access to advanced tools (e.g., pipeline viewer)
-- Storyboard exports and dynamic PPT for offline analysis sharing
+* **Standalone**: Minimal install with local data access
+* **Collaborative**: Shared services via MODNET or site-local servers
+* **AI-enabled**: Integration of automated insights and agent-driven workflows
 
 ---
 
-## 🔹 Server-Side Components
+## 2. Architectural Overview
 
-- **API Gateway**: routing, access control
-- **Project/Session Manager**: stores visualisation state and metadata
-- **Authentication**: OIDC/PKI-based identity
-- **Import Service**: file format parser
-- **Collaboration Service**: presence, ownership, lock management
-- **Annotation & Comment Manager**: threaded comments, status tracking
-- **Export Service**: GeoJSON, KML, CSV, HTML table, dynamic PPT
-- **Audit & Provenance Tracker**: inline with features or metadata
+### Component Map
 
----
+* **Core Sub-Systems** (required for minimal standalone operation)
+* **Shared Services** (optional, scalable extensions)
+* **AI Supervision** (optional automation layer)
 
-## 🔹 Data Storage
+### Runtime Environments
 
-### Local Mode (Offline/Electron)
-- Feature data and pipelines stored as GeoJSON + SQLite
-- Provenance and audit trail embedded in each Feature object
+* Browser-based UI (React)
+* Electron-based shell (for deployed/offline use)
+* Static STAC server (local)
+* REST-based services (networked mode)
 
-### Central Mode (Networked)
-- STAC server acts as the authoritative store
-- Tracks, annotations, and narrative data treated as STAC Items
+### Storage Models
+
+* Local FeatureCollection files (GeoJSON + audit)
+* SQLite (optional for RAP, participant indexing)
+* STAC-based server for central access to spatial/temporal data
 
 ---
 
-## 🔹 Model Context Protocol (MCP) Agents
+## 3. Sub-System Summary
 
-- Independently deployable services (REST)
-- Called by the client UI or LLM supervisor
-- Receive config via dynamic forms; return structured feature edits or annotations
-- Internal use of Python/code permitted; version/commit ID recorded per invocation
+### Core Sub-Systems
 
-### LLM Supervisor
-- Selects/configures MCP agents to deliver analysis pipelines
-- Offers suggestions, completes steps, or explains transformations
-- Responds to analyst questions and tasks
-- Observes user interactions and may suggest relevant overlays or tools
+1. **Client UI**
+2. **STAC Server (Static / File-Based)**
+3. **Import Service**
+4. **Export Service**
 
----
+### Shared Services
 
-## 🔹 Reproducible Analytical Pipelines (RAP)
+5. **Pipeline Engine (RAP)**
+6. **Annotation & Comment System**
+7. **Presence & Locking Service**
+8. **Platform Library Service**
+9. **Analysis Dashboard**
+10. **Wargame Metadata Store**
+11. **Pipeline Processor**
+12. **STAC Server (Dynamic / Server-Based)**
+13. **Authentication / Identity**
 
-### Client Pipeline Model
-- Each **Feature** owns its own pipeline by default
-- Pipelines are merged into a new **metadata Feature** when combining features
-- All **edit actions** tracked as pipeline steps:
-  - Import, property/geometry edits, merge, filter, MCP agent execution
-  - Styling changes, annotations, feature grouping
+### AI Supervision
 
-### Pipeline Step Schema
-Each step includes:
-- `timestamp`, `user`, `action_type`
-- `parameters` (e.g. bearing error, filter threshold)
-- `tool_id`, `commit_id` (if tool-based)
-- `notes`, and for merged pipelines: `input_feature_ids`, `output_feature_ids`
+14. **LLM Supervisor**
+15. **MCP Agent Registry**
 
-### Pipeline Viewer (Advanced Users Only)
-- Timeline or table view of steps
-- Filter by type, tool, feature
-- View diffs between steps
-- Revert, disable, or re-order steps
-- Export as **HTML table** for briefings or review packs
+Each sub-system may be deployed independently based on operational needs.
 
 ---
 
-## 🔹 Pipeline Publishing & Processor Jobs
+## 4. Integration Patterns
 
-### Publishing
-- Pipelines remain local by default
-- Published only when they have enduring value or automation utility
-- Publishing creates a shareable, immutable reference to the pipeline
-
-### Jobs
-- A **job** combines:
-  - A published pipeline
-  - Input source (file folder or STAC collection)
-  - Output target
-  - Optional parameters
-- Jobs define their own **trigger** (e.g., folder monitor, STAC tag)
-- The **Pipeline Processor** manages and executes jobs via API
+* REST APIs between services
+* File-based inputs/outputs (.rep, .dpf, .geojson)
+* STAC standard for discoverability and asset metadata
+* RAP pipelines stored inline or externally
+* FeatureCollections reference wargames and serials via `wargameId`, `serialId`
 
 ---
 
-## 🔹 AI & TMA Assistant
+## 5. Security and Identity
 
-### TMA Assistant
-- A specialised backend MCP agent for bearing-only track estimation
-- Accessible via the UI pipeline tools and callable from RAP workflows
-- Resulting inferences are stored as derived FeatureCollections with full provenance
-
-### AI Insight Workflow
-
-#### Analyst Use Cases
-LLMs should contribute by:
-- Removing mundane tasks:
-  - Applying plot and track formatting
-  - Generating range/bearing plots
-  - Producing key event tables
-  - Removing outliers in movement data
-- Revealing hidden insights:
-  - Identifying comms gaps or underperformance
-  - Relating course to environment or shipping
-  - Spotting missed detections or decision points
-- Exposing new inferences:
-  - Comparing vessel vs expected performance
-  - Validating detection geometry vs sensor specs
-  - Cross-checking decisions against orders
-  - Surfacing route reuse or environmental correlations
-
-#### Insight Delivery Modes
-- Timeline flags, side-panel suggestions, inline commentary
-- Summary cards, storyboard slide suggestions
-- Possibly inserting steps into editable pipelines (future capability)
-
-#### Analyst Interactions
-- Link insight to track, serial, or annotation
-- Accept/reject insight
-- Promote insight to a timeline event or annotation
-
-#### Explanation Format
-- Use terse language with IDs, measurements, and keywords
-- Avoid verbose natural language
-
-#### Confidence Representation
-- Probability or percentage (e.g., 84%)
-- Colour-coded confidence tiers
-- Analyst-configurable confidence thresholds
-
-#### Feedback Mechanisms
-- Flag incorrect insights
-- Tag as duplicate or already known
-- Rate insight usefulness (e.g., thumbs up/down)
+* Standalone installs run with OS-level file permissions
+* Shared deployments integrate with OIDC or PKI identity providers
+* Presence and locking managed at the FeatureCollection level
+* Annotations may be public or private; private annotations may be stored locally or in a presence service
 
 ---
 
-## 🔹 Networked Infrastructure
+## 6. Collaboration Modes
 
-### Integrated Data & Services
-Debrief will support integration with:
-- Authentication and identity providers
-- Shared track stores (STAC-based)
-- Narrative event sources (logs, diaries, observations)
-- Reference datasets (e.g., MMSI, ship specifications)
-- Environmental datasets (METOC, bathymetry, oceanographic models)
-- Simulation tools (e.g., sonar model runners)
-- Interoperability via STAC or REST standards
-- Event-driven processing (e.g., new data triggers analysis)
+* **Standalone**: Users load local files, no presence/locking, private annotations only
+* **Team-based wargame analysis**:
 
-### Dataset Discovery
-- Browseable STAC catalogues
-- Context-aware suggestions
-- Search/filter interface
-- Manual link entry for advanced users
-- Button/tool hints when linked data is available
+  * Wargame/serial metadata structures loaded
+  * FeatureCollections tagged by serial
+  * Dashboard shows status, comments, and edit ownership
+* **Review workflows**:
 
-### Application Profiles
-- Different builds will support different levels of network integration
-- Example: a basic offline app may wrap a local folder as the track store
-
-### Multi-Site Collaboration
-- Review workflows (prepare at one site, validate at another)
-- Cross-site presence indicators
-- Distributed RAP execution (local run, central results)
-- The **FeatureCollection is the unit of editing** (one editor at a time)
-
-### Supervisor Role in Collaboration
-- Supervisor does **not** coordinate collaboration
-- Collaborative context is handled via dashboards (e.g., who is editing what)
-- Supervisor may observe user actions and suggest relevant overlays or tools
+  * View-only dashboards for reviewers
+  * Unresolved comments, change logs, audit trails visible
 
 ---
 
-## 🔹 Storyboards and Exports
+## 7. Extensibility Strategy
 
-### Definition and Behaviour
-- Storyboards consist of spatial/temporal data + time-step viewports
-- “Next” and “Back” navigate steps; temporal filters apply per step
-- Each step may show a floating “Events Table” with key annotations
-
-### Editing UI
-- Timeline editor with rectangular time bands and viewport decorations
-- Hoverable event markers with tooltip details and toggle-to-include
-- Pan/zoom tools define viewports (unlocked per step)
-- Timeline shows annotation lifetimes and step boundaries
-
-### Annotations
-- Assigned to a single step by default, but can span steps
-- Visibility is user-controlled; only visible annotations are exported
-- Private annotations stored locally or via Presence service per user
-
-### Export Formats (in priority order)
-1. HTML ZIP bundle (self-contained viewer)
-2. Dynamic PowerPoint with transitions
-3. Screenshot sequence (one per step)
-4. MP4 video capture (larger files)
-5. Re-openable export for Debrief client
-6. PDF export not supported
-
-### Storage Model
-- Storyboard steps are stored as special features with polygon viewports
-- Metadata is stored within each storyboard feature’s `properties`
-- Storyboard history becomes part of the plot’s provenance chain
+* MCP agents are schema-described REST plugins
+* UI extensions provided via manifests + RJSF forms
+* RAP steps track tool execution, parameters, and results
+* Supervisor orchestrates agents based on analyst tasks
 
 ---
 
-## 🔹 Audit Log
+## 8. Export and Review Outputs
 
-### Purpose
-- Trace what changed, when, and why
-- Track who performed changes
-- Embed audit for RAP reproducibility
-- Export change summaries
-- Verify collaborative workflows
-- Not used for access control/security
+* **Storyboard Export**:
 
-### Storage
-- Embedded within each FeatureCollection as a top-level `audit` property
-- Never separated from the data it describes
+  * Timeline-based, with viewports and visible annotations
+  * Events table per step
+  * Export as HTML bundle, PPT, screenshots, or MP4
+* **Other Formats**:
 
-### Captured Events
-- Manual data edits
-- Feature creation/deletion
-- Import/export actions
-- Annotation/tag/visibility changes
-- Comment/resolution threads
-- Storyboard/viewport modifications
-
-### Interaction
-- Per-feature and full-collection history views
-- Filterable by user, time, or action
-- Supports diffs between entries
-- Exportable as tabular or timeline-style report
-- No need for spatial or timeline overlay views
+  * GeoJSON, KML, CSV
+  * Static viewer with timeline controls
+  * RAP summaries (HTML table)
 
 ---
 
-## 🔹 Future Enhancements
+## 9. Roadmap and Deployment Strategy *(Optional)*
 
-- Pipeline forking and reuse
-- Push notifications on new STAC updates
-- Visualisation state transitions for storyboard playback
-- UI plugin sandboxing (e.g., iframe or Shadow DOM)
-- Additional MCP agents for simulation, prediction, or anomaly detection
+* **Phase 1**: NATO prototype (backend foundation + retro-style UI)
+* **Phase 2**: MOD adoption (minimal core system)
+* **Phase 3**: Shared services and dashboard integration
+* **Phase 4**: AI supervision and RAP automation
+
+---
+
+## Appendices
+
+* Mermaid diagrams (Architecture, RAP, Dashboard flows)
+* Wargame/Serial JSON Schema (in future)
+* RAP step format and pipeline export model
