@@ -52,7 +52,7 @@ The system is designed to operate in multiple deployment contexts:
 ### Core Sub-Systems
 
 1. [Client UI](sub-systems/client_ui.html)
-2. [STAC Server (Static / File-Based)](sub-systems/stac_server_static_file_based.html)
+2. [STAC Server (Static / File-Based)](sub-systems/stac_server_static.html)
 3. [Import Service](sub-systems/import_service.html)
 4. [Export Service](sub-systems/export_service.html)
 5. [Pipeline Engine](sub-systems/pipeline_engine.html)
@@ -61,7 +61,7 @@ The system is designed to operate in multiple deployment contexts:
 
 6. [Platform Library](sub-systems/platform_library.html)
 7. [Pipeline Processor](sub-systems/pipeline_processor.html)
-8. [STAC Server (Dynamic / Server-Based)](sub-systems/stac_server_dynamic_server_based.html)
+8. [STAC Server (Dynamic / Server-Based)](sub-systems/stac_server_dynamic.html)
 
 ### Collaborative Services
 
