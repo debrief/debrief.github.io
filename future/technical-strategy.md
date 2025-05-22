@@ -97,8 +97,7 @@ architecture-beta
 
     service d8(database)[Platform Library] in shared
     service d11(server)[Pipeline Processor] in shared
-    service d12(database)[STAC Server] in shared
-
+    service d12(database)[Shared Data Store] in shared
 
     group collab(internet)[Collaborative] in subs
 
