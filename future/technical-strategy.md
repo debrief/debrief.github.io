@@ -48,29 +48,37 @@ The system is designed to operate in multiple deployment contexts:
 
 ## 3. Sub-System Summary
 
-### Core Sub-Systems
+<div class="mermaid">
+architecture-beta
+    group core(server)[Core]
 
-1. **Client UI**
-2. **STAC Server (Static / File-Based)**
-3. **Import Service**
-4. **Export Service**
+    service db(database)[Client UI] in core
+    service disk1(disk)[Data store] in core
+    service disk2(internet)[Import service] in core
+    service server(internet)[Export service] in core
+    service pipes(server)[Pipeline Engine] in core
 
-### Shared Services
+    group subs(Internet)[Subsystems]
 
-5. **Pipeline Engine (RAP)**
-6. **Annotation & Comment System**
-7. **Presence & Locking Service**
-8. **Platform Library Service**
-9. **Analysis Dashboard**
-10. **Wargame Metadata Store**
-11. **Pipeline Processor**
-12. **STAC Server (Dynamic / Server-Based)**
-13. **Authentication / Identity**
+    group llm(internet)[LLM] in subs
+    service l1(cloud)[LLM Supervisor] in llm
+    service l2(cloud)[MCP Agent Registry] in llm
 
-### AI Supervision
+    group shared(internet)[Shared] in subs
 
-14. **LLM Supervisor**
-15. **MCP Agent Registry**
+    service d8(database)[Platform Library] in shared
+    service d11(server)[Pipeline Processor] in shared
+    service d12(database)[STAC Server] in shared
+
+
+    group collab(internet)[Collaborative] in subs
+
+    service d13(server)[Authentication] in collab
+    service d6(server)[Commenting] in collab
+    service d7(server)[Presence Locking] in collab
+    service d9(cloud)[Analysis Dashboard] in collab
+    service d10(database)[Wargame Metadata] in collab
+</div>
 
 Each sub-system may be deployed independently based on operational needs.
 
