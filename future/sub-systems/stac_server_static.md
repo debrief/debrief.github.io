@@ -1,6 +1,8 @@
 ---
-title: "STAC Server (Static / File-Based)"
+layout: page
+title: "STAC Server (Static)"
 date: 2025-05-21
+tags: [Mermaid]
 mermaid: true
 ---
 
