@@ -112,7 +112,7 @@ STAC metadata and folder hierarchy are maintained automatically by the Import Se
 
 ## 📁 New Wargame
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant User
     participant ImportService
@@ -122,13 +122,13 @@ sequenceDiagram
     User->>ImportService: Create new wargame (year + name)
     ImportService->>FileSystem: Create Year/Exercise folder
     ImportService->>CatalogJSON: Add exercise link to catalog.json
-```
+</div>
 
 ---
 
 ## 📂 New Serial
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant User
     participant ImportService
@@ -142,13 +142,13 @@ sequenceDiagram
     ImportService->>FileSystem: Generate item.json
     ImportService->>CatalogJSON: Add serial link to catalog.json
     ImportService->>CollectionJSON: Ensure collection/tracks.json is updated
-```
+</div>
 
 ---
 
 ## 💾 Save Serial (Update)
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant User
     participant ImportService
@@ -157,13 +157,13 @@ sequenceDiagram
     User->>ImportService: Save changes to serial
     ImportService->>FileSystem: Overwrite serial.geojson
     ImportService->>FileSystem: Update item.json (metadata)
-```
+</div>
 
 ---
 
 ## 🗑️ Delete Serial
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant User
     participant ImportService
@@ -173,13 +173,13 @@ sequenceDiagram
     User->>ImportService: Delete serial
     ImportService->>FileSystem: Delete serial.geojson and item.json
     ImportService->>CatalogJSON: Remove serial link from catalog.json
-```
+</div>
 
 ---
 
 ## 🧹 Delete Wargame
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant User
     participant ImportService
@@ -189,13 +189,13 @@ sequenceDiagram
     User->>ImportService: Delete wargame
     ImportService->>FileSystem: Delete Exercise folder
     ImportService->>CatalogJSON: Remove wargame link from catalog.json
-```
+</div>
 
 ---
 
 ## 🔍 Browse Years / Exercises / Serials
 
-```mermaid
+<div class="mermaid">
 sequenceDiagram
     participant ClientUI
     participant FileSystem
@@ -204,4 +204,4 @@ sequenceDiagram
     ClientUI->>CatalogJSON: Read catalog.json
     CatalogJSON-->>ClientUI: Return year/exercise/serial links
     ClientUI->>FileSystem: Read item.json (optional preview)
-```
+</div>
