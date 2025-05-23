@@ -1,5 +1,8 @@
-
-# STAC Server (Static / File-Based)
+---
+title: "STAC Server (Static / File-Based)"
+date: 2025-05-21
+mermaid: true
+---
 
 This document defines the `STAC Server (Static / File-Based)` sub-system, part of the Debrief Rewrite under the **Core Sub-Systems** category.
 
