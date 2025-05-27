@@ -270,3 +270,26 @@ sequenceDiagram
     CatalogJSON-->>ClientUI: Return year/exercise/serial links
     ClientUI->>FileSystem: Read item.json (optional preview)
 </div>
+
+# Browse/Search Using Spatial or Temporal Filters
+
+<div class="mermaid">
+sequenceDiagram
+    participant User
+    participant ClientUI
+    participant FileSystem
+    participant CatalogJSON
+    participant ItemJSON
+
+    User->>ClientUI: Apply spatial and/or temporal filters
+    ClientUI->>CatalogJSON: Load catalog.json
+    CatalogJSON-->>ClientUI: List of item.json links
+
+    loop For each item
+        ClientUI->>FileSystem: Load item.json
+        FileSystem-->>ClientUI: Return metadata (bbox, datetime)
+        ClientUI->>ClientUI: Evaluate against spatial/temporal filters
+    end
+
+    ClientUI-->>User: Show matching serials on map/timeline
+</div>
