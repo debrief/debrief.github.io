@@ -32,6 +32,9 @@ stac-root/
 │       └── serial-01/
 │           ├── item.json
 │           └── serial-01.geojson
+│           └── serial-01.png
+│           └── serial-01.zip
+
 ```
 
 ### STAC Metadata Files
