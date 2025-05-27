@@ -40,6 +40,53 @@ stac-root/
 * `collections/tracks.json`: describes the FeatureCollection type
 * `item.json`: metadata for a single serial, references one GeoJSON file as an `asset`
 
+
+Sample `catalog.json`:
+```json
+{
+  "stac_version": "1.0.0",
+  "type": "Catalog",
+  "id": "debrief-root",
+  "title": "Debrief Plot Archive",
+  "description": "Top-level catalog for locally stored wargame plots and serials.",
+  "links": [
+    {
+      "rel": "child",
+      "href": "collections/tracks.json",
+      "type": "application/json",
+      "title": "Track Data Collection"
+    },
+    {
+      "rel": "child",
+      "href": "2026/cold-depths/serial-01/item.json",
+      "type": "application/json",
+      "title": "Serial 01: Cold Depths"
+    }
+  ]
+}
+```
+
+Example `collections/tracks.json`:
+```json
+{
+  "stac_version": "1.0.0",
+  "type": "Collection",
+  "id": "tracks",
+  "title": "Debrief Track Data",
+  "description": "A collection of track plots and annotations for exercise analysis.",
+  "license": "proprietary",
+  "extent": {
+    "spatial": {
+      "bbox": [[-180.0, -90.0, 180.0, 90.0]]
+    },
+    "temporal": {
+      "interval": [["2025-01-01T00:00:00Z", null]]
+    }
+  },
+  "links": []
+}
+```
+
 Example `item.json`:
 
 ```json
@@ -59,6 +106,16 @@ Example `item.json`:
       "href": "serial-01.geojson",
       "type": "application/geo+json",
       "title": "GeoJSON plot for serial-01"
+    },
+    "thumbnail": {
+      "href": "serial-01.png",
+      "type": "image/png",
+      "title": "Thumbnail for serial-01"
+    },
+    "export": {
+      "href": "serial-01.zip",
+      "type": "application/zip",
+      "title": "Exported serial-01 (dynamic HTML)"
     }
   }
 }
