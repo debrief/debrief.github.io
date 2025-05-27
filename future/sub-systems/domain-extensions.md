@@ -1,6 +1,6 @@
 # Vision: *Debrief Core + Domain Extensions*
 
-## ᾜd️ Debrief Core (Reusable Across All Domains)
+## Debrief Core (Reusable Across All Domains)
 
 These are the foundational systems, shared regardless of domain:
 
@@ -12,6 +12,7 @@ These are the foundational systems, shared regardless of domain:
 | **RAP Engine**    | Reproducible Analysis Pipelines                    | Automates repeatable tasks                                           |
 | **AI**            | LLM Supervisor + MCP agents                        | Provides insights, suggestions, summaries                            |
 | **Import/Export** | Pluggable import/export service                    | Converts domain-specific formats to/from standardised internal forms |
+{:.table-striped}
 
 ---
 
