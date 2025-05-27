@@ -120,13 +120,13 @@ STAC metadata and folder hierarchy are maintained automatically by the Import Se
 <div class="mermaid">
 sequenceDiagram
     participant User
-    participant ImportService
+    participant ClientUI
     participant FileSystem
     participant CatalogJSON
 
-    User->>ImportService: Create new wargame (year + name)
-    ImportService->>FileSystem: Create Year/Exercise folder
-    ImportService->>CatalogJSON: Add exercise link to catalog.json
+    User->>ClientUI: Create new wargame (year + name)
+    ClientUI->>FileSystem: Create Year/Exercise folder
+    ClientUI->>CatalogJSON: Add exercise link to catalog.json
 </div>
 
 ---
@@ -136,17 +136,17 @@ sequenceDiagram
 <div class="mermaid">
 sequenceDiagram
     participant User
-    participant ImportService
+    participant ClientUI
     participant FileSystem
     participant CatalogJSON
     participant CollectionJSON
 
-    User->>ImportService: Save new serial (with data)
-    ImportService->>FileSystem: Create Exercise/Serial folder
-    ImportService->>FileSystem: Write serial.geojson
-    ImportService->>FileSystem: Generate item.json
-    ImportService->>CatalogJSON: Add serial link to catalog.json
-    ImportService->>CollectionJSON: Ensure collection/tracks.json is updated
+    User->>ClientUI: Save new serial (with data)
+    ClientUI->>FileSystem: Create Exercise/Serial folder
+    ClientUI->>FileSystem: Write serial.geojson
+    ClientUI->>FileSystem: Generate item.json
+    ClientUI->>CatalogJSON: Add serial link to catalog.json
+    ClientUI->>CollectionJSON: Update collection/tracks.json
 </div>
 
 ---
@@ -156,12 +156,12 @@ sequenceDiagram
 <div class="mermaid">
 sequenceDiagram
     participant User
-    participant ImportService
+    participant ClientUI
     participant FileSystem
 
-    User->>ImportService: Save changes to serial
-    ImportService->>FileSystem: Overwrite serial.geojson
-    ImportService->>FileSystem: Update item.json (metadata)
+    User->>ClientUI: Save changes to serial
+    ClientUI->>FileSystem: Overwrite serial.geojson
+    ClientUI->>FileSystem: Update item.json
 </div>
 
 ---
@@ -171,13 +171,13 @@ sequenceDiagram
 <div class="mermaid">
 sequenceDiagram
     participant User
-    participant ImportService
+    participant ClientUI
     participant FileSystem
     participant CatalogJSON
 
-    User->>ImportService: Delete serial
-    ImportService->>FileSystem: Delete serial.geojson and item.json
-    ImportService->>CatalogJSON: Remove serial link from catalog.json
+    User->>ClientUI: Delete serial
+    ClientUI->>FileSystem: Delete serial.geojson and item.json
+    ClientUI->>CatalogJSON: Remove serial link from catalog.json
 </div>
 
 ---
@@ -187,13 +187,13 @@ sequenceDiagram
 <div class="mermaid">
 sequenceDiagram
     participant User
-    participant ImportService
+    participant ClientUI
     participant FileSystem
     participant CatalogJSON
 
-    User->>ImportService: Delete wargame
-    ImportService->>FileSystem: Delete Exercise folder
-    ImportService->>CatalogJSON: Remove wargame link from catalog.json
+    User->>ClientUI: Delete wargame
+    ClientUI->>FileSystem: Delete Exercise folder
+    ClientUI->>CatalogJSON: Remove wargame link from catalog.json
 </div>
 
 ---
