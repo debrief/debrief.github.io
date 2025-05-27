@@ -180,6 +180,10 @@ Each sub-system may be deployed independently based on operational needs.
 
 ---
 
+## 10. Domain Extensions
+
+See more [here](./sub-systems/domain-extensions.md)
+
 ## Appendices
 
 * Mermaid diagrams (Architecture, RAP, Dashboard flows)
