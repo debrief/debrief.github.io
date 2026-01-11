@@ -11,7 +11,7 @@ description: Progress updates on Future Debrief development
   </header>
 
   <div class="future-post-list">
-    {% assign future_posts = site.posts | where_exp: "post", "post.layout == 'future-post'" %}
+    {% assign future_posts = site.posts | where_exp: "post", "post.layout == 'future-post'" | sort: "date" | reverse %}
     {% for post in future_posts %}
     <article class="future-post-list__item">
       {% if post.track %}
