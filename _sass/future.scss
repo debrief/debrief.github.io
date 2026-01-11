@@ -135,12 +135,12 @@ $content-width-wide: 960px;
   }
 
   &__link {
-    color: $depth-2;
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     transition: color 150ms ease;
-    &:hover { color: $white; }
+    &:hover { color: #ffffff; }
   }
 }
 
