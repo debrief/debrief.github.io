@@ -113,7 +113,7 @@ $content-width-wide: 960px;
   justify-content: space-between;
 
   &__logo {
-    color: $white;
+    color: #ffffff !important;
     font-size: 18px;
     font-weight: 600;
     letter-spacing: -0.02em;
@@ -121,7 +121,7 @@ $content-width-wide: 960px;
     align-items: center;
     gap: $space-2;
     text-decoration: none;
-    &:hover { color: $white; }
+    &:hover { color: #ffffff !important; }
   }
 
   &__icon { color: $bearing-blue; }
