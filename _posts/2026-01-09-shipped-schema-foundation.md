@@ -1,7 +1,7 @@
 ---
 layout: future-post
 title: "Shipped: Schema Foundation"
-date: 2026-01-09 16:00:00 +0000
+date: 2026-01-09 08:00:00 +0000
 track: "Shipped · Stage 0"
 author: Ian
 reading_time: 4

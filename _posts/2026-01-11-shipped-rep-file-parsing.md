@@ -1,7 +1,7 @@
 ---
 layout: future-post
 title: "Shipped: REP File Parsing"
-date: 2026-01-11 16:00:00 +0000
+date: 2026-01-11 08:00:00 +0000
 track: "Shipped · Stage 2"
 author: Ian
 reading_time: 4
