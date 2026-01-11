@@ -289,11 +289,12 @@ $content-width-wide: 960px;
   transition: all 150ms ease;
   border: none;
   font-family: $font-primary;
+  color: inherit;
 
   &--primary {
     background: $bearing-blue;
-    color: $white;
-    &:hover { background: darken($bearing-blue, 8%); color: $white; }
+    color: #ffffff !important;
+    &:hover { background: darken($bearing-blue, 8%); color: #ffffff !important; }
   }
 
   &--secondary {
@@ -302,6 +303,11 @@ $content-width-wide: 960px;
     border: 1px solid $bearing-blue;
     &:hover { background: rgba($bearing-blue, 0.05); }
   }
+}
+
+a.future-btn--primary {
+  color: #ffffff !important;
+  &:hover { color: #ffffff !important; }
 }
 
 // =============================================================================
