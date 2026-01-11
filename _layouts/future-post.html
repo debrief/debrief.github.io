@@ -1,0 +1,42 @@
+---
+layout: future-default
+---
+
+<main class="future-content">
+  <article class="future-article">
+    <header class="future-hero">
+      <svg class="future-hero__contours" viewBox="0 0 400 400">
+        <ellipse cx="200" cy="200" rx="60" ry="36" fill="none" stroke="#2d5a7b" stroke-width="1.5"/>
+        <ellipse cx="200" cy="200" rx="100" ry="60" fill="none" stroke="#2d5a7b" stroke-width="1.5"/>
+        <ellipse cx="200" cy="200" rx="140" ry="84" fill="none" stroke="#2d5a7b" stroke-width="1.5"/>
+        <ellipse cx="200" cy="200" rx="180" ry="108" fill="none" stroke="#2d5a7b" stroke-width="1.5"/>
+        <ellipse cx="200" cy="200" rx="220" ry="132" fill="none" stroke="#2d5a7b" stroke-width="1.5"/>
+        <ellipse cx="200" cy="200" rx="260" ry="156" fill="none" stroke="#2d5a7b" stroke-width="1.5"/>
+      </svg>
+
+      {% if page.track %}
+      <p class="future-hero__track">{{ page.track }}</p>
+      {% endif %}
+
+      <h1 class="future-hero__title">{{ page.title }}</h1>
+
+      <p class="future-hero__meta">
+        {{ page.date | date: "%d %B %Y" }}
+        {% if page.author %} · {{ page.author }}{% endif %}
+        {% if page.reading_time %} · {{ page.reading_time }} min read{% endif %}
+      </p>
+    </header>
+
+    <div class="future-article__body">
+      {{ content }}
+    </div>
+
+    {% if page.tags.size > 0 %}
+    <footer class="mt-8">
+      {% for tag in page.tags %}
+      <span class="future-tag">{{ tag }}</span>
+      {% endfor %}
+    </footer>
+    {% endif %}
+  </article>
+</main>

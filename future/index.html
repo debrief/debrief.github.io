@@ -1,0 +1,86 @@
+---
+layout: future-default
+title: Future Debrief
+description: Modernising maritime analysis for the next generation
+---
+
+<main class="future-content future-content--wide">
+  <header class="future-hero" style="text-align: center; padding-top: 32px;">
+    <h1>Future Debrief</h1>
+    <p style="font-size: 1.25rem; color: #5c5850; max-width: 600px; margin: 0 auto 32px;">
+      Rebuilding a 25-year-old maritime analysis platform for the next generation of analysts.
+    </p>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="{{ '/future/blog/' | relative_url }}" class="future-btn future-btn--primary">Read the Blog</a>
+      <a href="https://github.com/debrief/debrief-future" class="future-btn future-btn--secondary">View on GitHub</a>
+    </div>
+  </header>
+
+  <section class="mt-12">
+    <h2>What's Happening</h2>
+    <p>
+      We're rebuilding Debrief from the ground up: replacing Eclipse RCP with Python services,
+      enabling scientists to build their own analysis tools, and introducing aggregate analysis
+      across multiple exercises.
+    </p>
+    <p>
+      This site documents the journey. We're building in the open — sharing progress, problems,
+      and decisions as they happen.
+    </p>
+  </section>
+
+  <section class="mt-12">
+    <h2>Recent Posts</h2>
+    <div class="future-cards">
+      {% assign future_posts = site.posts | where_exp: "post", "post.layout == 'future-post'" | limit: 3 %}
+      {% for post in future_posts %}
+      <article class="future-card">
+        {% if post.track %}
+        <span class="future-card__track">{{ post.track }}</span>
+        {% endif %}
+        <h3 class="future-card__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        <span class="future-card__meta">{{ post.date | date: "%d %b %Y" }}</span>
+        {% if post.excerpt %}
+        <p class="future-card__excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+        {% endif %}
+      </article>
+      {% else %}
+      <p class="text-muted">No posts yet. Check back soon.</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2>Three Tracks</h2>
+    <p>Content is organised into three tracks:</p>
+
+    <div class="future-cards mt-6">
+      <div class="future-card">
+        <span class="future-card__track">Track 1</span>
+        <h3 class="future-card__title">Momentum</h3>
+        <p class="future-card__excerpt">Something is growing. Progress updates, problems solved.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Track 2</span>
+        <h3 class="future-card__title">Credibility</h3>
+        <p class="future-card__excerpt">Approaching full capabilities. Milestone achievements.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Track 3</span>
+        <h3 class="future-card__title">Desire</h3>
+        <p class="future-card__excerpt">New things become possible. Aggregate analysis, Python tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12 mb-12">
+    <h2>Links</h2>
+    <ul>
+      <li><a href="https://github.com/debrief/debrief-future">GitHub Repository</a></li>
+      <li><a href="{{ '/' | relative_url }}">Legacy Debrief Site</a></li>
+      <li><a href="https://github.com/debrief/debrief-future/discussions">Join the Discussion</a></li>
+    </ul>
+  </section>
+</main>

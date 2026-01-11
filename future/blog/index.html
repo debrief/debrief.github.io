@@ -1,0 +1,34 @@
+---
+layout: future-default
+title: Blog
+description: Progress updates on Future Debrief development
+---
+
+<main class="future-content">
+  <header class="future-hero">
+    <h1>Blog</h1>
+    <p class="future-hero__meta">Progress updates, technical deep-dives, and lessons learned.</p>
+  </header>
+
+  <div class="future-post-list">
+    {% assign future_posts = site.posts | where_exp: "post", "post.layout == 'future-post'" %}
+    {% for post in future_posts %}
+    <article class="future-post-list__item">
+      {% if post.track %}
+      <span class="future-post-list__track">{{ post.track }}</span>
+      {% endif %}
+      <h2 class="future-post-list__title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+      <p class="future-post-list__meta">{{ post.date | date: "%d %B %Y" }}</p>
+      {% if post.excerpt %}
+      <p class="future-post-list__excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+      {% endif %}
+    </article>
+    {% else %}
+    <p class="text-muted" style="padding: 48px 0; text-align: center;">
+      No posts yet. The first update is coming soon.
+    </p>
+    {% endfor %}
+  </div>
+</main>
