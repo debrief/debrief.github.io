@@ -1,7 +1,7 @@
 ---
 layout: future-post
 title: "Shipped: Local STAC Catalog Operations"
-date: 2026-01-11
+date: 2026-01-10 16:00:00 +0000
 track: "Shipped · Stage 1"
 author: Ian
 reading_time: 4

@@ -1,7 +1,7 @@
 ---
 layout: future-post
 title: "Planning: Local STAC Catalog Operations"
-date: 2026-01-09
+date: 2026-01-10 08:00:00 +0000
 track: "Planning · This Week"
 author: Ian
 reading_time: 3
