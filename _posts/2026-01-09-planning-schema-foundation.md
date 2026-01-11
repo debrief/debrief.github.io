@@ -1,7 +1,7 @@
 ---
 layout: future-post
 title: "Planning: Schema Foundation"
-date: 2026-01-09 08:00:00 +0000
+date: 2026-01-09 16:00:00 +0000
 track: "Planning · This Week"
 author: Ian
 reading_time: 3
