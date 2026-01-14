@@ -10,10 +10,28 @@ description: Progress updates on Future Debrief development
     <p class="future-hero__meta">Progress updates, technical deep-dives, and lessons learned.</p>
   </header>
 
-  <div class="future-post-list">
+  <div class="future-filter-controls">
+    <button type="button" class="future-filter-btn" data-filter="momentum" aria-pressed="false">
+      <span class="future-filter-btn__label">Track 1</span>
+      <span class="future-filter-btn__title">Momentum</span>
+    </button>
+    <button type="button" class="future-filter-btn" data-filter="credibility" aria-pressed="false">
+      <span class="future-filter-btn__label">Track 2</span>
+      <span class="future-filter-btn__title">Credibility</span>
+    </button>
+    <button type="button" class="future-filter-btn" data-filter="desire" aria-pressed="false">
+      <span class="future-filter-btn__label">Track 3</span>
+      <span class="future-filter-btn__title">Desire</span>
+    </button>
+    <button type="button" class="future-filter-clear" id="clear-filter" aria-hidden="true">
+      Show all posts
+    </button>
+  </div>
+
+  <div class="future-post-list" id="post-list">
     {% assign future_posts = site.posts | where_exp: "post", "post.layout == 'future-post'" | sort: "date" | reverse %}
     {% for post in future_posts %}
-    <article class="future-post-list__item">
+    <article class="future-post-list__item" data-track="{{ post.track | downcase }}">
       {% if post.track %}
       <span class="future-post-list__track">{{ post.track }}</span>
       {% endif %}
@@ -31,4 +49,5 @@ description: Progress updates on Future Debrief development
     </p>
     {% endfor %}
   </div>
+  <p class="future-empty-state" id="empty-state" aria-hidden="true">No posts match this filter.</p>
 </main>
