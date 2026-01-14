@@ -6,8 +6,9 @@
   'use strict';
 
   // Track-to-keyword mapping
+  // Posts contain track values like "Shipped · Stage 1", "Momentum · Track 1", "Planning · This Week"
   const trackKeywords = {
-    momentum: ['momentum', 'shipped', 'progress'],
+    momentum: ['momentum', 'shipped', 'progress', 'planning'],
     credibility: ['credibility', 'milestone', 'technical'],
     desire: ['desire', 'vision', 'future']
   };
