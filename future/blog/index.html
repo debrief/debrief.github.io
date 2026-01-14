@@ -31,9 +31,9 @@ description: Progress updates on Future Debrief development
   <div class="future-post-list" id="post-list">
     {% assign future_posts = site.posts | where_exp: "post", "post.layout == 'future-post'" | sort: "date" | reverse %}
     {% for post in future_posts %}
-    <article class="future-post-list__item" data-track="{{ post.track | downcase }}">
+    <article class="future-post-list__item" data-track="{{ post.track | join: ',' | downcase }}">
       {% if post.track %}
-      <span class="future-post-list__track">{{ post.track }}</span>
+      <span class="future-post-list__track">{% for t in post.track %}{{ t | capitalize }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
       {% endif %}
       <h2 class="future-post-list__title">
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>

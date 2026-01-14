@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: Schema Foundation"
 date: 2026-01-09 08:00:00 +0000
-track: "Shipped · Stage 0"
+track: [credibility]
 author: Ian
 reading_time: 4
 tags: [tracer-bullet, schemas, linkml, pydantic, shipped]

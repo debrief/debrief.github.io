@@ -1,17 +1,17 @@
 /**
  * Track Filter - Client-side post filtering by track category
  * Enables users to filter blog posts by clicking track filter buttons
+ *
+ * Posts have a `track` front matter field with one or more values:
+ * - momentum: Planning posts, progress updates
+ * - credibility: Shipped posts, milestones achieved
+ * - desire: Vision posts, future capabilities
  */
 (function() {
   'use strict';
 
-  // Track-to-keyword mapping
-  // Posts contain track values like "Shipped · Stage 1", "Momentum · Track 1", "Planning · This Week"
-  const trackKeywords = {
-    momentum: ['momentum', 'shipped', 'progress', 'planning'],
-    credibility: ['credibility', 'milestone', 'technical'],
-    desire: ['desire', 'vision', 'future']
-  };
+  // Valid track values
+  const validTracks = ['momentum', 'credibility', 'desire'];
 
   // DOM elements
   let filterButtons;
@@ -21,18 +21,17 @@
   let currentFilter = null;
 
   /**
-   * Check if a post's track data matches the filter keywords
-   * @param {string} postTrack - The track value from the post's data attribute
-   * @param {string} filter - The filter category (momentum, credibility, desire)
+   * Check if a post's track data includes the filter value
+   * @param {string} postTrack - Comma-separated track values from data attribute
+   * @param {string} filter - The filter to match (momentum, credibility, desire)
    * @returns {boolean} - Whether the post matches the filter
    */
   function matchesTrack(postTrack, filter) {
     if (!postTrack || !filter) return false;
-    const keywords = trackKeywords[filter];
-    if (!keywords) return false;
 
-    const trackLower = postTrack.toLowerCase();
-    return keywords.some(keyword => trackLower.includes(keyword));
+    // Split comma-separated tracks and check if filter is included
+    const tracks = postTrack.split(',').map(t => t.trim().toLowerCase());
+    return tracks.includes(filter.toLowerCase());
   }
 
   /**
@@ -177,7 +176,7 @@
 
     // Apply filter from URL if present
     const urlFilter = getFilterFromURL();
-    if (urlFilter && trackKeywords[urlFilter]) {
+    if (urlFilter && validTracks.includes(urlFilter.toLowerCase())) {
       applyFilter(urlFilter);
     }
   }
