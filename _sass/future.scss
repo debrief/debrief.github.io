@@ -388,6 +388,149 @@ a.future-btn--primary {
 }
 
 // =============================================================================
+// Track Filter Controls
+// =============================================================================
+
+.future-filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  margin-bottom: $space-6;
+  align-items: center;
+}
+
+.future-filter-btn {
+  // Reset button styles
+  appearance: none;
+  border: 1px solid $depth-2;
+  background: $white;
+  font-family: $font-primary;
+  cursor: pointer;
+  text-align: left;
+  padding: $space-3 $space-4;
+  border-radius: 4px;
+  transition: all 150ms ease;
+
+  &:hover {
+    border-color: $bearing-blue;
+    box-shadow: 0 2px 8px rgba($slate-navy, 0.08);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bearing-blue;
+    outline-offset: 2px;
+  }
+
+  &__label {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: $bearing-blue;
+    margin-bottom: 2px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: $slate-navy;
+  }
+
+  // Active state
+  &--active {
+    background: $bearing-blue;
+    border-color: $bearing-blue;
+
+    .future-filter-btn__label {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .future-filter-btn__title {
+      color: $white;
+    }
+
+    &:hover {
+      background: darken($bearing-blue, 5%);
+      border-color: darken($bearing-blue, 5%);
+    }
+  }
+}
+
+.future-filter-clear {
+  appearance: none;
+  background: transparent;
+  border: 1px solid $depth-2;
+  font-family: $font-primary;
+  font-size: 14px;
+  font-weight: 500;
+  color: $depth-4;
+  padding: $space-2 $space-4;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 150ms ease;
+  display: none;
+
+  &--visible {
+    display: inline-block;
+  }
+
+  &:hover {
+    border-color: $bearing-blue;
+    color: $bearing-blue;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $bearing-blue;
+    outline-offset: 2px;
+  }
+}
+
+// Post item visibility states
+.future-post-list__item {
+  transition: opacity 200ms ease, transform 200ms ease;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+// Empty state message
+.future-empty-state {
+  display: none;
+  text-align: center;
+  padding: $space-12 0;
+  color: $depth-3;
+  font-size: 15px;
+
+  &--visible {
+    display: block;
+  }
+}
+
+// Clickable card variant for track cards on home page
+.future-card--clickable {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+
+  .future-card__title {
+    color: $slate-navy;
+  }
+
+  .future-card__excerpt {
+    color: $depth-4;
+  }
+
+  &:hover {
+    .future-card__title {
+      color: $bearing-blue;
+    }
+  }
+}
+
+// =============================================================================
 // Utilities
 // =============================================================================
 
