@@ -442,6 +442,7 @@ a.future-btn--primary {
   &--active {
     background: $bearing-blue;
     border-color: $bearing-blue;
+    box-shadow: 0 2px 8px rgba($bearing-blue, 0.4);
 
     .future-filter-btn__label {
       color: rgba(255, 255, 255, 0.7);
@@ -454,6 +455,21 @@ a.future-btn--primary {
     &:hover {
       background: darken($bearing-blue, 5%);
       border-color: darken($bearing-blue, 5%);
+    }
+  }
+
+  // Also support aria-pressed styling as fallback
+  &[aria-pressed="true"] {
+    background: $bearing-blue;
+    border-color: $bearing-blue;
+    box-shadow: 0 2px 8px rgba($bearing-blue, 0.4);
+
+    .future-filter-btn__label {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .future-filter-btn__title {
+      color: $white;
     }
   }
 }
@@ -492,7 +508,12 @@ a.future-btn--primary {
   transition: opacity 200ms ease, transform 200ms ease;
 
   &--hidden {
-    display: none;
+    display: none !important;
+  }
+
+  // Fallback using aria-hidden
+  &[aria-hidden="true"] {
+    display: none !important;
   }
 }
 

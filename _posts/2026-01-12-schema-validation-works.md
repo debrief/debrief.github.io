@@ -2,7 +2,7 @@
 layout: future-post
 title: "Schema validation now works across Python and TypeScript"
 date: 2026-01-12
-track: "Momentum · Track 1"
+track: [momentum]
 author: Ian
 reading_time: 4
 tags: [tracer-bullet, schemas]

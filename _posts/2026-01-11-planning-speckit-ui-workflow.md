@@ -2,7 +2,7 @@
 layout: future-post
 title: "Planning: SpecKit UI Workflow Enhancement"
 date: 2026-01-11
-track: "Planning · This Week"
+track: [momentum]
 author: Ian
 reading_time: 3
 tags: [speckit, tooling, developer-experience]

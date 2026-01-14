@@ -2,7 +2,7 @@
 layout: future-post
 title: "Planning: REP File Parsing"
 date: 2026-01-11 16:00:00 +0000
-track: "Planning · This Week"
+track: [momentum]
 author: Ian
 reading_time: 4
 tags: [tracer-bullet, parsing, rep-format, python]

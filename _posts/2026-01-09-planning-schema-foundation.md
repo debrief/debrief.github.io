@@ -2,7 +2,7 @@
 layout: future-post
 title: "Planning: Schema Foundation"
 date: 2026-01-09 16:00:00 +0000
-track: "Planning · This Week"
+track: [momentum]
 author: Ian
 reading_time: 3
 tags: [tracer-bullet, schemas, linkml, pydantic]

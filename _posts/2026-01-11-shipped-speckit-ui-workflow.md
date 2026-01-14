@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: SpecKit UI Workflow Enhancement"
 date: 2026-01-11
-track: "Shipped · This Week"
+track: [credibility]
 author: Ian
 reading_time: 3
 tags: [speckit, tooling, developer-experience, shipped]
