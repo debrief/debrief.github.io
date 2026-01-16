@@ -8,7 +8,7 @@ description: Modernising maritime analysis for the next generation
   <header class="future-hero" style="text-align: center; padding-top: 32px;">
     <h1>Future Debrief</h1>
     <p style="font-size: 1.25rem; color: #5c5850; max-width: 600px; margin: 0 auto 32px;">
-      Rebuilding a 25-year-old maritime analysis platform for the next generation of analysts.
+      Rebuilding a 30-year-old maritime analysis platform for the next generation of analysts.
     </p>
     <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
       <a href="{{ '/future/blog/' | relative_url }}" class="future-btn future-btn--primary">Read the Blog</a>
@@ -17,15 +17,172 @@ description: Modernising maritime analysis for the next generation
   </header>
 
   <section class="mt-12">
-    <h2>What's Happening</h2>
+    <h2>The Vision</h2>
     <p>
-      We're rebuilding Debrief from the ground up: replacing Eclipse RCP with Python services,
-      enabling scientists to build their own analysis tools, and introducing aggregate analysis
-      across multiple exercises.
+      Debrief has served maritime analysts for over 30 years. But the technology landscape has changed dramatically.
+      Eclipse RCP investment is waning, Java desktop expertise is shrinking, and modern analysts expect browser-based,
+      collaborative tools.
     </p>
     <p>
-      This site documents the journey. We're building in the open — sharing progress, problems,
-      and decisions as they happen.
+      <strong>Three problems we're solving:</strong>
+    </p>
+    <div class="future-cards mt-6">
+      <div class="future-card">
+        <span class="future-card__track">Problem 1</span>
+        <h3 class="future-card__title">Platform Decline</h3>
+        <p class="future-card__excerpt">Eclipse RCP is no longer actively developed. Finding Java/SWT developers is increasingly difficult.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Problem 2</span>
+        <h3 class="future-card__title">Contractor Dependency</h3>
+        <p class="future-card__excerpt">Domain scientists can't build their own tools. Every enhancement requires specialist Java developers.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Problem 3</span>
+        <h3 class="future-card__title">Data Silos</h3>
+        <p class="future-card__excerpt">Each exercise lives in isolation. There's no way to query across historical archives for aggregate analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2>Technical Approach</h2>
+    <p>
+      We're following a "thick services, thin frontends" architecture. 90% of the logic lives in Python services;
+      frontends handle orchestration and display only.
+    </p>
+    <div class="future-cards mt-6">
+      <div class="future-card">
+        <span class="future-card__track">Foundation</span>
+        <h3 class="future-card__title">Schema-First</h3>
+        <p class="future-card__excerpt">LinkML defines the master schema, generating Pydantic models, JSON Schema, and TypeScript types automatically.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Storage</span>
+        <h3 class="future-card__title">STAC Catalogs</h3>
+        <p class="future-card__excerpt">Plots stored as GeoJSON in Spatiotemporal Asset Catalogs. Open standard, queryable, portable.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Integration</span>
+        <h3 class="future-card__title">MCP Protocol</h3>
+        <p class="future-card__excerpt">Services exposed via Model Context Protocol, enabling AI assistants to orchestrate analysis workflows.</p>
+      </div>
+      <div class="future-card">
+        <span class="future-card__track">Frontends</span>
+        <h3 class="future-card__title">Multiple Clients</h3>
+        <p class="future-card__excerpt">VS Code extension, Electron app, Jupyter notebooks, and browser SPA. Same services, your choice of interface.</p>
+      </div>
+    </div>
+    <p class="mt-6">
+      <a href="https://github.com/debrief/debrief-future/blob/main/ARCHITECTURE.md">Read the full Architecture document &rarr;</a>
+    </p>
+  </section>
+
+  <section class="mt-12">
+    <h2>Core Principles</h2>
+    <p>
+      The <a href="https://github.com/debrief/debrief-future/blob/main/CONSTITUTION.md">Constitution</a> defines
+      immutable principles that guide every decision:
+    </p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 24px;">
+      <div style="background: #fff; border: 1px solid #d4d0c7; padding: 16px;">
+        <strong style="color: #2d5a7b;">Offline First</strong>
+        <p style="font-size: 14px; color: #5c5850; margin: 8px 0 0;">Core functionality works without network. Always.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid #d4d0c7; padding: 16px;">
+        <strong style="color: #2d5a7b;">Provenance Always</strong>
+        <p style="font-size: 14px; color: #5c5850; margin: 8px 0 0;">Every transformation is recorded. Full audit trail.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid #d4d0c7; padding: 16px;">
+        <strong style="color: #2d5a7b;">No Silent Failures</strong>
+        <p style="font-size: 14px; color: #5c5850; margin: 8px 0 0;">Operations succeed completely or fail explicitly.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid #d4d0c7; padding: 16px;">
+        <strong style="color: #2d5a7b;">Data Sovereignty</strong>
+        <p style="font-size: 14px; color: #5c5850; margin: 8px 0 0;">Your data stays on your machine. No cloud required.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid #d4d0c7; padding: 16px;">
+        <strong style="color: #2d5a7b;">Schema Integrity</strong>
+        <p style="font-size: 14px; color: #5c5850; margin: 8px 0 0;">All data validated against schemas. No exceptions.</p>
+      </div>
+      <div style="background: #fff; border: 1px solid #d4d0c7; padding: 16px;">
+        <strong style="color: #2d5a7b;">Test Coverage</strong>
+        <p style="font-size: 14px; color: #5c5850; margin: 8px 0 0;">Every feature has tests. Specs before implementation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-12">
+    <h2>Roadmap</h2>
+    <p>
+      We're following a <a href="https://github.com/debrief/debrief-future/blob/main/docs/tracer-delivery-plan.md">tracer bullet</a>
+      approach: building thin slices through the full stack to validate the architecture early.
+    </p>
+    <p><strong>All specification stages are now complete:</strong></p>
+    <table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 15px;">
+      <thead>
+        <tr style="border-bottom: 2px solid #2d5a7b;">
+          <th style="text-align: left; padding: 12px 8px; color: #2d5a7b;">Stage</th>
+          <th style="text-align: left; padding: 12px 8px; color: #2d5a7b;">Component</th>
+          <th style="text-align: left; padding: 12px 8px; color: #2d5a7b;">Purpose</th>
+          <th style="text-align: center; padding: 12px 8px; color: #2d5a7b;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">0</td>
+          <td style="padding: 12px 8px;"><strong>Schemas</strong></td>
+          <td style="padding: 12px 8px;">LinkML models, generators, test fixtures</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">1</td>
+          <td style="padding: 12px 8px;"><strong>STAC Operations</strong></td>
+          <td style="padding: 12px 8px;">Local catalog management</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">2</td>
+          <td style="padding: 12px 8px;"><strong>File I/O</strong></td>
+          <td style="padding: 12px 8px;">REP file parsing to GeoJSON</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">3</td>
+          <td style="padding: 12px 8px;"><strong>Config</strong></td>
+          <td style="padding: 12px 8px;">Cross-platform user state</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">4</td>
+          <td style="padding: 12px 8px;"><strong>Loader App</strong></td>
+          <td style="padding: 12px 8px;">Electron mini-app for file loading</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">5</td>
+          <td style="padding: 12px 8px;"><strong>Analysis Tools</strong></td>
+          <td style="padding: 12px 8px;">Context-aware calculations</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+        <tr style="border-bottom: 1px solid #d4d0c7;">
+          <td style="padding: 12px 8px;">6</td>
+          <td style="padding: 12px 8px;"><strong>VS Code Extension</strong></td>
+          <td style="padding: 12px 8px;">Full display and interaction</td>
+          <td style="padding: 12px 8px; text-align: center; color: #3a6b5c;">&#10003; Complete</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="mt-6">
+      <a href="https://github.com/debrief/debrief-future/tree/main/specs">View all specifications on GitHub &rarr;</a>
+    </p>
+  </section>
+
+  <section class="mt-12">
+    <h2>What's Happening</h2>
+    <p>
+      With specifications complete, we're now in the implementation phase. Follow the blog to track progress
+      as we build each component.
     </p>
   </section>
 
@@ -54,7 +211,7 @@ description: Modernising maritime analysis for the next generation
 
   <section class="mt-12">
     <h2>Three Tracks</h2>
-    <p>Content is organised into three tracks:</p>
+    <p>Blog content is organised into three tracks:</p>
 
     <div class="future-cards mt-6">
       <a href="{{ '/future/blog/?track=momentum' | relative_url }}" class="future-card future-card--clickable">
@@ -78,9 +235,12 @@ description: Modernising maritime analysis for the next generation
   <section class="mt-12 mb-12">
     <h2>Links</h2>
     <ul>
-      <li><a href="https://github.com/debrief/debrief-future">GitHub Repository</a></li>
-      <li><a href="{{ '/' | relative_url }}">Legacy Debrief Site</a></li>
-      <li><a href="https://github.com/debrief/debrief-future/discussions">Join the Discussion</a></li>
+      <li><a href="https://github.com/debrief/debrief-future">GitHub Repository</a> - Source code and specifications</li>
+      <li><a href="https://github.com/debrief/debrief-future/blob/main/VISION.md">Vision Document</a> - Strategic context and goals</li>
+      <li><a href="https://github.com/debrief/debrief-future/blob/main/ARCHITECTURE.md">Architecture</a> - Technical design decisions</li>
+      <li><a href="https://github.com/debrief/debrief-future/blob/main/CONSTITUTION.md">Constitution</a> - Immutable principles</li>
+      <li><a href="https://github.com/debrief/debrief-future/discussions">Join the Discussion</a> - Community feedback</li>
+      <li><a href="{{ '/' | relative_url }}">Legacy Debrief Site</a> - Current production version</li>
     </ul>
   </section>
 </main>
