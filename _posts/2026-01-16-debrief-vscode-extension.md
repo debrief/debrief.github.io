@@ -10,6 +10,8 @@ excerpt: "Maritime tactical analysis directly in VS Code with interactive maps a
 
 We've shipped the Debrief VS Code Extension v0.1.0 — bringing maritime tactical analysis directly into your development environment.
 
+![VS Code Extension Demo](/assets/images/future-posts/vscode-demo.gif)
+
 ## What We Built
 
 The extension provides the foundation for analyzing maritime plots:
@@ -18,6 +20,8 @@ The extension provides the foundation for analyzing maritime plots:
 2. **Interactive Map Display**: Leaflet-based maps with Canvas renderer handling 10,000+ track points
 3. **Track Visualization**: Colored polylines with labels at start points and hover tooltips
 4. **Selection System**: Click, Shift+click, and Ctrl+click with animated glow effects
+
+![Map with vessel tracks](/assets/images/future-posts/vscode-map.png)
 
 ## Technical Highlights
 
