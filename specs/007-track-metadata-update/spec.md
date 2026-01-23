@@ -18,7 +18,7 @@ Replace the free-form track string with a YAML array containing one or more stan
 |-------|---------|-------------|
 | `momentum` | Progress is visible | Planning posts, progress updates, work in motion |
 | `credibility` | Capability demonstrated | Shipped posts, milestones achieved, technical proof |
-| `desire` | Future becomes tangible | Vision posts, roadmap items, upcoming capabilities |
+| `ambition` | Future becomes tangible | Vision posts, roadmap items, upcoming capabilities |
 
 ## Implementation
 
@@ -68,7 +68,7 @@ Replace the track row in the front matter table:
 
 **After:**
 ```markdown
-| `track` | Array of track values: `momentum`, `credibility`, `desire` |
+| `track` | Array of track values: `momentum`, `credibility`, `ambition` |
 ```
 
 ### Track Value Examples Section
@@ -94,12 +94,12 @@ Posts must include one or more track values from:
 |-------|----------|
 | `momentum` | Announcing plans, sharing progress, work in motion |
 | `credibility` | Delivering features, hitting milestones, proving capability |
-| `desire` | Painting the future, roadmap items, vision pieces |
+| `ambition` | Painting the future, roadmap items, vision pieces |
 
 **Examples:**
 - Planning post: `track: [momentum]`
 - Shipped post: `track: [credibility]`
-- Major milestone with roadmap implications: `track: [credibility, desire]`
+- Major milestone with roadmap implications: `track: [credibility, ambition]`
 - Progress update showing ongoing work: `track: [momentum]`
 ```
 
