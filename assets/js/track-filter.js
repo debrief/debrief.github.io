@@ -5,13 +5,13 @@
  * Posts have a `track` front matter field with one or more values:
  * - momentum: Planning posts, progress updates
  * - credibility: Shipped posts, milestones achieved
- * - desire: Vision posts, future capabilities
+ * - ambition: Vision posts, future capabilities
  */
 (function() {
   'use strict';
 
   // Valid track values
-  const validTracks = ['momentum', 'credibility', 'desire'];
+  const validTracks = ['momentum', 'credibility', 'ambition'];
 
   // DOM elements
   let filterButtons;
@@ -23,7 +23,7 @@
   /**
    * Check if a post's track data includes the filter value
    * @param {string} postTrack - Comma-separated track values from data attribute
-   * @param {string} filter - The filter to match (momentum, credibility, desire)
+   * @param {string} filter - The filter to match (momentum, credibility, ambition)
    * @returns {boolean} - Whether the post matches the filter
    */
   function matchesTrack(postTrack, filter) {
