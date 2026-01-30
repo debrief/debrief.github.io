@@ -13,9 +13,13 @@ excerpt: "Double-click a STAC catalog to see every item's spatial bounds and tem
 
 The catalog overview panel turns a STAC directory into a navigable spatial-temporal index. Double-click a catalog node in the STAC Stores tree view, and VS Code opens a read-only panel showing two synchronized views: a Leaflet map with bounding box rectangles for every item, and an SVG timeline with horizontal bars representing temporal spans.
 
-The component lives in `shared/components/` as a reusable React element, tested in Storybook with 11 stories covering nominal cases and edge conditions (empty catalogs, missing bbox, missing temporal metadata). The panel integrates into VS Code as a `WebviewPanel`, using the same message-passing pattern as the existing plot view.
+![Catalog Overview panel showing bounding boxes on a Leaflet map with a timeline below](/assets/images/future-debrief/stac-catalog-overview-panel/catalog-view.png)
 
-Double-clicking an item on either the map or timeline opens that item in the full plot view—no separate navigation step needed.
+Double-clicking an item opens the full plot view with tracks, layers, and time controls:
+
+![Plot view opened from catalog overview showing vessel tracks on the map](/assets/images/future-debrief/stac-catalog-overview-panel/plot-view.png)
+
+The component lives in `shared/components/` as a reusable React element, tested in Storybook with 11 stories covering nominal cases and edge conditions (empty catalogs, missing bbox, missing temporal metadata). The panel integrates into VS Code as a `WebviewPanel`, using the same message-passing pattern as the existing plot view.
 
 ## How It Works
 
