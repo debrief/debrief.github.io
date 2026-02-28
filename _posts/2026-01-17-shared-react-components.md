@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: Shared React Component Library for Maritime Analysis"
 date: 2026-01-17
-track: "Shipped · shared-react-components"
+track: [credibility]
 author: Ian
 reading_time: 4
 tags: [debrief, react, components, maritime, shipped]

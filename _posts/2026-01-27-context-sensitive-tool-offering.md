@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: Context-Sensitive Tool Offering in VS Code"
 date: 2026-01-27
-track: "Shipped · VS Code Extension"
+track: [credibility]
 author: Ian
 reading_time: 4
 tags: [tracer-bullet, vscode-extension, tool-matching, analysis-tools]

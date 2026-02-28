@@ -3,7 +3,7 @@ layout: future-post
 title: "Shipped: Debrief VS Code Extension v0.1.0"
 date: 2026-01-16
 author: Ian
-track: "Shipped · VS Code Extension"
+track: [credibility]
 reading_time: 3
 excerpt: "Maritime tactical analysis directly in VS Code with interactive maps and track visualization."
 ---

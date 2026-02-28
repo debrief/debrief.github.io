@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: Epic Support for Large Feature Breakdown"
 date: 2026-01-23
-track: "Shipped · epic-workflow"
+track: [credibility]
 author: Ian
 reading_time: 3
 tags: [ai, workflow, agile]

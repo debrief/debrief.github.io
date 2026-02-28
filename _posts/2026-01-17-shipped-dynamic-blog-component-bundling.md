@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: Dynamic Blog Component Bundling"
 date: 2026-01-17
-track: [shipped]
+track: [credibility]
 author: Ian
 reading_time: 5
 tags: [tracer-bullet, speckit, blog-components, storybook, shipped]
