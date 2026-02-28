@@ -45,6 +45,9 @@ nav:
         link: /library/AdvancedAnalysisWithDebrief_4-5.pdf
       - name: Replay File Format
         link: /tutorial/reference.html
+  - name: Future
+    link: /future/
+    id: NavlinkFuture
   - name: Blog
     link: /blog/
     id: NavlinkBlog
