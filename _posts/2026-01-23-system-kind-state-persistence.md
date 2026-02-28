@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: SYSTEM Kind for Plot State Persistence"
 date: 2026-01-23
-track: "Shipped · schemas"
+track: [credibility]
 author: Ian
 reading_time: 2
 tags: [tracer-bullet, schemas, geojson]

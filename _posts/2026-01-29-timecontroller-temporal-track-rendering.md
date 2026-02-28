@@ -2,7 +2,7 @@
 layout: future-post
 title: "Shipped: TimeController Now Drives Map Track Rendering"
 date: 2026-01-29
-track: "Shipped · temporal-track"
+track: [credibility]
 author: Ian
 reading_time: 3
 tags: [vscode, temporal, leaflet, track-rendering]
