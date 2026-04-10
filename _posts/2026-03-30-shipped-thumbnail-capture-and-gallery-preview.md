@@ -41,6 +41,14 @@ One deliberate decision: thumbnail assets carry no provenance links. They're dis
 
 Capture is non-blocking by design. The 5-second timeout means a slow tile load during save doesn't hold up the analyst. If capture fails, the save completes, a warning is logged, and the backfill script can fill the gap later.
 
+## Screenshots
+
+![Gallery preview pane showing a large thumbnail of the selected plot](/assets/images/future/174-preview-panel.png)
+*Click a plot in the catalog browser and the large thumbnail appears in the preview pane*
+
+![List view with raster thumbnails alongside exercise entries](/assets/images/future/174-welcome-thumbnails.png)
+*Raster thumbnails appear inline in the list view, with SVG spatial thumbnails as fallback*
+
 ## What's Next
 
 The E2E tests are written and running locally but aren't yet wired into CI — that needs a Playwright setup step in the workflow. The backfill script hasn't been exercised against a full production-sized catalog yet; performance at scale is still an open question.
