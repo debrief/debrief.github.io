@@ -5,11 +5,23 @@ Create a blog post in `_posts/` for a feature shipped (or planned) in the
 
 ## Input
 
-The user will typically provide a **spec folder URL** from debrief-future:
+The user will typically provide a **spec folder URL** from debrief-future.
+This will usually be on a **development branch** (not `main`), because the
+command is triggered right after `/speckit.implement` completes:
 
 ```
-https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>
+https://github.com/debrief/debrief-future/tree/<branch>/specs/<NNN>-<slug>
 ```
+
+For example:
+```
+https://github.com/debrief/debrief-future/tree/179-sensor-aware-layers-rendering/specs/179-sensor-aware-layers-rendering
+```
+
+The branch name is often the spec number and slug (e.g.
+`179-sensor-aware-layers-rendering`) or a Claude-generated name (e.g.
+`claude/speckit-specify-005-zJrC6`). Either works — extract the branch
+and path from the URL.
 
 This folder contains the richest source material:
 - `spec.md` — the full specification (requirements, design, contracts)
@@ -19,17 +31,29 @@ This folder contains the richest source material:
 Other accepted inputs: a PR URL/number, a feature description, or a commit
 range. Use whatever is available to understand what was built and why.
 
+### Parsing the URL
+
+Extract two values from the input URL:
+- **`branch`** — the ref between `/tree/` and the path (e.g.
+  `179-sensor-aware-layers-rendering`, `claude/speckit-specify-005-zJrC6`,
+  or `main`)
+- **`spec_path`** — the path after the branch (e.g.
+  `specs/179-sensor-aware-layers-rendering`)
+
+Use `branch` as the `ref` parameter when calling GitHub MCP tools, so
+content is fetched from the development branch, not `main`.
+
 ### Fetching source material
 
 Use the GitHub MCP tools to read the spec contents before drafting:
 
-1. **Spec folder URL** — use `mcp__github__get_file_contents` to read
-   `spec.md` from the path (e.g. `specs/179-sensor-aware-layers-rendering/spec.md`).
-2. **Media sub-folder** — check for `media/` in the same spec folder. If
-   screenshots exist, copy them to
-   `assets/images/future-debrief/<post-slug>/` and reference them in the post.
-3. **Evidence sub-folder** — check `evidence/` for test summaries or sample
-   output to quote in the "Evidence" or "Test Coverage" section.
+1. **Spec folder URL** — use `mcp__github__get_file_contents` with
+   `path: "<spec_path>/spec.md"` and `ref: "<branch>"`.
+2. **Media sub-folder** — use `mcp__github__get_file_contents` with
+   `path: "<spec_path>/media"` and `ref: "<branch>"` to list available
+   images. Copy them into this repo (see "Handling images" below).
+3. **Evidence sub-folder** — check `<spec_path>/evidence` on the same
+   branch for test summaries or sample output.
 4. **PR URL** — use `mcp__github__pull_request_read` to get the description,
    diff stats, and review comments.
 
@@ -42,12 +66,13 @@ the published site.
 
 ### Step-by-step
 
-1. **List the media folder** — use `mcp__github__get_file_contents` on the
-   spec's `media/` path (e.g. `specs/179-sensor-aware-layers-rendering/media`)
-   to discover available images.
+1. **List the media folder** — use `mcp__github__get_file_contents` with
+   `path: "<spec_path>/media"` and `ref: "<branch>"` to discover available
+   images.
 
-2. **Download each image** — use `mcp__github__get_file_contents` for each
-   file. For binary files (PNG, JPG) the content will be base64-encoded.
+2. **Download each image** — use `mcp__github__get_file_contents` with
+   `ref: "<branch>"` for each file. For binary files (PNG, JPG) the content
+   will be base64-encoded.
 
 3. **Write to this repo** — save images to:
    ```
@@ -180,11 +205,15 @@ on it.>
   files and modules. Show small code/config snippets when they clarify.
 - **Length**: 300-800 words for the body. Enough to be useful, short enough
   to read in the stated `reading_time`.
-- **Links**: End with arrow-prefixed links to the spec and evidence on GitHub:
+- **Links**: End with arrow-prefixed links to the spec and evidence on
+  GitHub. Use the **development branch** from the input URL (the content
+  may not be on `main` yet):
   ```
-  → [See the spec](https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>/spec.md)
-  → [View the evidence](https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>/evidence)
+  → [See the spec](https://github.com/debrief/debrief-future/tree/<branch>/specs/<NNN>-<slug>/spec.md)
+  → [View the evidence](https://github.com/debrief/debrief-future/tree/<branch>/specs/<NNN>-<slug>/evidence)
   ```
+  These links will continue to work after the branch merges to `main`
+  because GitHub redirects merged branch URLs.
 - **No emojis** in front matter or body text.
 
 ## Checklist before committing
