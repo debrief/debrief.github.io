@@ -5,13 +5,33 @@ Create a blog post in `_posts/` for a feature shipped (or planned) in the
 
 ## Input
 
-The user will provide one or more of: a PR URL/number, a spec path, a feature
-description, or a commit range. Use whatever is available to understand what
-was built and why it matters.
+The user will typically provide a **spec folder URL** from debrief-future:
 
-When a GitHub PR or spec URL is provided, fetch its contents using the
-available GitHub MCP tools (e.g. `mcp__github__pull_request_read`,
-`mcp__github__get_file_contents`) to gather technical detail before drafting.
+```
+https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>
+```
+
+This folder contains the richest source material:
+- `spec.md` — the full specification (requirements, design, contracts)
+- `media/` — screenshots, diagrams, screen recordings
+- `evidence/` — test summaries, CI output, sample data
+
+Other accepted inputs: a PR URL/number, a feature description, or a commit
+range. Use whatever is available to understand what was built and why.
+
+### Fetching source material
+
+Use the GitHub MCP tools to read the spec contents before drafting:
+
+1. **Spec folder URL** — use `mcp__github__get_file_contents` to read
+   `spec.md` from the path (e.g. `specs/179-sensor-aware-layers-rendering/spec.md`).
+2. **Media sub-folder** — check for `media/` in the same spec folder. If
+   screenshots exist, copy them to
+   `assets/images/future-debrief/<post-slug>/` and reference them in the post.
+3. **Evidence sub-folder** — check `evidence/` for test summaries or sample
+   output to quote in the "Evidence" or "Test Coverage" section.
+4. **PR URL** — use `mcp__github__pull_request_read` to get the description,
+   diff stats, and review comments.
 
 ## Output
 
@@ -117,8 +137,11 @@ on it.>
   files and modules. Show small code/config snippets when they clarify.
 - **Length**: 300-800 words for the body. Enough to be useful, short enough
   to read in the stated `reading_time`.
-- **Links**: End with a link to the relevant code or PR on GitHub when
-  available.
+- **Links**: End with arrow-prefixed links to the spec and evidence on GitHub:
+  ```
+  → [See the spec](https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>/spec.md)
+  → [View the evidence](https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>/evidence)
+  ```
 - **No emojis** in front matter or body text.
 
 ## Checklist before committing
