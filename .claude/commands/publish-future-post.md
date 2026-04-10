@@ -206,14 +206,14 @@ on it.>
 - **Length**: 300-800 words for the body. Enough to be useful, short enough
   to read in the stated `reading_time`.
 - **Links**: End with arrow-prefixed links to the spec and evidence on
-  GitHub. Use the **development branch** from the input URL (the content
-  may not be on `main` yet):
+  GitHub. Always use **`main`** in these URLs (not the dev branch), since
+  the dev branch will be deleted after merge:
   ```
-  → [See the spec](https://github.com/debrief/debrief-future/tree/<branch>/specs/<NNN>-<slug>/spec.md)
-  → [View the evidence](https://github.com/debrief/debrief-future/tree/<branch>/specs/<NNN>-<slug>/evidence)
+  → [See the spec](https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>/spec.md)
+  → [View the evidence](https://github.com/debrief/debrief-future/tree/main/specs/<NNN>-<slug>/evidence)
   ```
-  These links will continue to work after the branch merges to `main`
-  because GitHub redirects merged branch URLs.
+  The input URL may reference a dev branch — that's fine for *fetching*
+  content, but the published post should link to `main` for durability.
 - **No emojis** in front matter or body text.
 
 ## Checklist before committing
