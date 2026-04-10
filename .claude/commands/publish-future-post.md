@@ -33,9 +33,52 @@ Use the GitHub MCP tools to read the spec contents before drafting:
 4. **PR URL** — use `mcp__github__pull_request_read` to get the description,
    diff stats, and review comments.
 
+## Handling images
+
+Screenshots and diagrams live in the spec's `media/` sub-folder in
+debrief-future. They must be **copied into this repo** so the Jekyll site
+can serve them — GitHub-hosted URLs from the sister repo won't render on
+the published site.
+
+### Step-by-step
+
+1. **List the media folder** — use `mcp__github__get_file_contents` on the
+   spec's `media/` path (e.g. `specs/179-sensor-aware-layers-rendering/media`)
+   to discover available images.
+
+2. **Download each image** — use `mcp__github__get_file_contents` for each
+   file. For binary files (PNG, JPG) the content will be base64-encoded.
+
+3. **Write to this repo** — save images to:
+   ```
+   assets/images/future-debrief/<post-slug>/<filename>
+   ```
+   The `<post-slug>` matches the post filename without the date prefix
+   (e.g. `shipped-sensor-aware-track-rendering`).
+
+4. **Reference in markdown** — use site-relative paths:
+   ```markdown
+   ![Alt text describing what the screenshot shows](/assets/images/future-debrief/<post-slug>/<filename>)
+   ```
+
+5. **Write descriptive alt text** — describe what the screenshot shows for
+   accessibility. Don't use the filename as alt text.
+
+### Existing examples
+
+| Post slug | Image path |
+|-----------|-----------|
+| `shipped-loader-mini-app` | `/assets/images/future-debrief/shipped-loader-mini-app/03-store-selector-multiple.png` |
+| `shipped-point-rectangle-drawing` | `/assets/images/future-debrief/shipped-point-rectangle-drawing/storybook-screenshot-point.png` |
+| `shipped-e2e-tests-sandboxed` | `/assets/images/future-debrief/shipped-e2e-tests-sandboxed/01-workbench-loaded.png` |
+
+If the spec has **no `media/` folder** or it is empty, skip this section
+entirely — not every post needs screenshots.
+
 ## Output
 
-A single markdown file committed to `_posts/` following the conventions below.
+A markdown file committed to `_posts/` (plus any images in
+`assets/images/future-debrief/`) following the conventions below.
 
 ---
 
@@ -153,3 +196,7 @@ on it.>
 4. Body uses `##` headings (not `#`).
 5. No trailing whitespace or blank lines at end of file.
 6. Slug doesn't duplicate an existing post filename.
+7. All images are saved to `assets/images/future-debrief/<post-slug>/`
+   (not left as GitHub URLs pointing at debrief-future).
+8. Image markdown uses site-relative paths (`/assets/images/...`), not
+   absolute GitHub URLs.
