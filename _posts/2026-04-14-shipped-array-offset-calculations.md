@@ -34,19 +34,19 @@ The TypeScript integration point is `prepareSensorContacts` in `sensor-utils.ts`
 
 ## The Three Modes Side by Side
 
-The plot below renders the same vessel track and the same 1500 m sensor offset three times, once per mode. Each panel shows the vessel track, the host position at the contact time, the computed array centre, and the bearing cuts originating from that centre:
+The screenshot below renders the same vessel track and the same four sensor contacts three times -- once per mode -- in the Debrief UI:
 
-![Three-panel comparison plot showing PLAIN, WORM and MEASURED array centre modes for the same vessel track and sensor offset, with bearing cuts radiating from each computed array centre position](/assets/images/future-debrief/shipped-array-offset-calculations/plot-comparison.svg)
+![Debrief UI showing three side-by-side map panels of the same vessel track with PLAIN, WORM and MEASURED array-centre modes: PLAIN shows bearing cuts fanning from the current heading, WORM shows bearings originating along the pre-turn leg of the track, MEASURED shows bearings anchored at the instrumented sensor positions](/assets/images/future-debrief/shipped-array-offset-calculations/array-offset-comparison-default.png)
 
-PLAIN's origin jumps instantly when the vessel turns. WORM's origin stays on the path the array actually travelled. MEASURED's origin tracks the sensor's own instrumented location.
+Same inputs, three different answers. In PLAIN the bearing fan pivots with the vessel's current heading. In WORM it stays wrapped around the path the array physically took through the turn. In MEASURED it anchors to the sensor's instrumented location, with only one contact shown here because the measured-position window doesn't cover the others.
 
-## PLAIN vs WORM Through a Turn
+## The WORM Close-Up
 
-The difference between the two calculated modes only matters once the vessel manoeuvres. The diagram below shows a right-angle turn with a 2 km sensor offset:
+Zooming into WORM makes the key behaviour easier to see:
 
-![Diagram comparing PLAIN and WORM array centre positions after a 90-degree vessel turn, with PLAIN placing the origin 2km directly west of the vessel and WORM tracing back along the actual track path to a point south of the turn](/assets/images/future-debrief/shipped-array-offset-calculations/worm-through-turn.svg)
+![Close-up map of the WORM mode showing bearing lines for contacts C1 through C4 originating at different points along the vessel's recorded track: earlier contacts C1 and C2 originate from the southern pre-turn leg of the track, while later contacts C3 and C4 originate from the eastern post-turn leg](/assets/images/future-debrief/shipped-array-offset-calculations/array-offset-worm.png)
 
-PLAIN anchors the bearing fan 2 km west of where the vessel currently is. WORM walks 1.43 km back along the east-west leg and another 0.57 km down the southbound leg, anchoring the fan where the array physically was at the contact time. For contacts collected before the turn had settled, WORM's origin is the right one.
+Contacts C1 and C2 were collected while the vessel was still on the southbound leg. Their bearing cuts originate there, on the pre-turn part of the track -- which is where the array actually was at that moment. C3 and C4 come later, once the vessel has turned east, so their origins have walked around the corner too. PLAIN can't do this: its origins always backtrack from the vessel's *current* heading, which is only correct between manoeuvres.
 
 ## By the Numbers
 
