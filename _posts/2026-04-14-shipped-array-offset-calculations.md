@@ -32,6 +32,14 @@ Both use a single Earth radius (6 371 000 m), the same spherical haversine formu
 
 The TypeScript integration point is `prepareSensorContacts` in `sensor-utils.ts`. `<SensorBearingLayer>` now gets corrected origins automatically whenever a sensor defines both `offset` and `array_centre_mode`; no changes were needed to the rendering code itself.
 
+## The Three Modes Side by Side
+
+The plot below renders the same vessel track and the same 1500 m sensor offset three times, once per mode. Each panel shows the vessel track, the host position at the contact time, the computed array centre, and the bearing cuts originating from that centre:
+
+![Three-panel comparison plot showing PLAIN, WORM and MEASURED array centre modes for the same vessel track and sensor offset, with bearing cuts radiating from each computed array centre position](/assets/images/future-debrief/shipped-array-offset-calculations/plot-comparison.svg)
+
+PLAIN's origin jumps instantly when the vessel turns. WORM's origin stays on the path the array actually travelled. MEASURED's origin tracks the sensor's own instrumented location.
+
 ## PLAIN vs WORM Through a Turn
 
 The difference between the two calculated modes only matters once the vessel manoeuvres. The diagram below shows a right-angle turn with a 2 km sensor offset:
