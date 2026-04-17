@@ -15,6 +15,24 @@ A schema-driven Properties Panel that edits STAC item metadata from two surfaces
 
 The form is generated from the LinkML-derived JSON Schema for the STAC item type. `PropertiesForm` in `shared/components/src/PropertiesPanel/` walks the schema and maps each property to either a `ParameterEditor` widget (scalars, enums) or one of four new sibling widgets: `ArrayWidget` for chip lists, `DateTimeWidget` for ISO-8601, `BboxWidget` for the four-quad, `PlatformArrayWidget` for platform records. Add a field in LinkML, run `make generate`, and a new input appears on the next build -- confirmed by the round-trip test in `test_properties_panel_roundtrip.py`.
 
+## Screenshots
+
+The `PropertiesForm` rendering the metadata for a catalog item, against three VS Code theme variants. Two fields carry chips: `datetime` is *auto-derived* from feature timestamps, `start_datetime` is *override* because the analyst overrode it once, so subsequent derivation passes skip it.
+
+![PropertiesForm in the dark theme -- Title, Datetime with "auto-derived" chip, Start datetime with "override" chip, chip-list of tags, Platforms](/assets/images/future-debrief/shipped-properties-panel/properties-form-dark.png)
+*Dark theme.*
+
+![PropertiesForm in the light theme -- same layout, light background](/assets/images/future-debrief/shipped-properties-panel/properties-form-light.png)
+*Light theme.*
+
+![PropertiesForm in the VS Code sidebar theme -- neutral dark palette matching the editor chrome](/assets/images/future-debrief/shipped-properties-panel/properties-form-vscode.png)
+*VS Code sidebar theme.*
+
+Schema-invalid input is rejected inline -- no disk write, no provenance entry. Here an invalid ISO-8601 datetime surfaces an inline error next to the field, and the original value on disk is unchanged until a valid commit lands:
+
+![PropertiesForm showing an inline validation error under the Datetime field -- "Must be a valid ISO-8601 datetime (e.g. 2025-01-01T12:00:00Z)"](/assets/images/future-debrief/shipped-properties-panel/properties-form-validation-error.png)
+*Inline validation error.*
+
 ## How It Works
 
 Writes go through a single gatekeeper: `stacService.updateItemMetadata`. Read, record mtime, merge patch into `item.properties`, append a provenance entry, re-stat to detect concurrent edits, atomic temp+rename onto `item.json`. No session-state staging, no parallel write path, no last-write-wins. The same method serves the ActivityPanel and the StacBrowser -- the "which surface is editing?" question never becomes a "which writer wins?" question because there is only one writer.
