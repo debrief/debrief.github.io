@@ -205,6 +205,10 @@
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PropertiesProvenanceEntry/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RectangleAnnotation/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
@@ -705,6 +709,10 @@
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/slots/fields/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/fill/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
@@ -873,6 +881,10 @@
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/slots/method/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/min/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
@@ -918,6 +930,10 @@
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/origin/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/slots/overrides/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
@@ -994,6 +1010,10 @@
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/provenance/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/slots/provenance_log/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
@@ -1094,6 +1114,10 @@
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/solutions/</loc>
+         <lastmod>2026-04-17</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source/</loc>
          <lastmod>2026-04-17</lastmod>
     </url>
     <url>
