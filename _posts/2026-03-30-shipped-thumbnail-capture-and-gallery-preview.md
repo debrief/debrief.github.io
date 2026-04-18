@@ -4,17 +4,20 @@ title: "Shipped: Thumbnail Capture and Gallery Preview"
 date: 2026-03-30
 track: [credibility]
 author: Ian
-reading_time: 4
+reading_time: 5
 tags: [stac, catalog-browser, thumbnails, discovery]
 excerpt: "Save a plot and get a persistent PNG thumbnail; browse your catalog gallery with arrow-key navigation."
 ---
-
 
 ## What We Built
 
 When you save a plot now, the system captures the current map view as a PNG — basemap tiles, track overlays, labels — and writes two sizes into the STAC item directory: 800x600 for the preview pane and 200x150 for the list. The thumbnails land as standard STAC assets with `"thumbnail"` roles, so they're not a Debrief-specific convention. Any STAC client knows what to do with them.
 
+![Catalog browser gallery preview pane showing the large thumbnail alongside the filtered list](/assets/images/future-debrief/shipped-thumbnail-capture-and-gallery-preview/preview-panel.png)
+
 The catalog browser has a new gallery preview pane. Click a plot in the list and the large thumbnail appears on the right. Press the arrow keys to move through filtered results. Single-click previews; double-click opens. For existing plots created before this feature landed, a Playwright-based backfill script automates the web-shell to open each plot, fit the view to visible features, wait for tiles, and capture.
+
+![Catalog list view with raster thumbnails rendered inline for every sample plot](/assets/images/future-debrief/shipped-thumbnail-capture-and-gallery-preview/welcome-thumbnails.png)
 
 The list view now shows raster thumbnails inline where they exist. The SVG spatial thumbnails remain as the fallback — they render without any prior save — so the list never goes blank.
 
@@ -41,13 +44,15 @@ One deliberate decision: thumbnail assets carry no provenance links. They're dis
 
 Capture is non-blocking by design. The 5-second timeout means a slow tile load during save doesn't hold up the analyst. If capture fails, the save completes, a warning is logged, and the backfill script can fill the gap later.
 
-## Screenshots
+## Retro-capture: the demo catalog
 
-![Gallery preview pane showing a large thumbnail of the selected plot](/assets/images/future/174-preview-panel.png)
-*Click a plot in the catalog browser and the large thumbnail appears in the preview pane*
+The save-time capture path only helps plots saved *after* the feature landed. The demo STAC catalog at `preview/workspace/samples/local-store/` shipped long before, so all 73 sample plots had no thumbnails — the very gap the backfill script was built to close. Under T036a we ran a one-off retro-capture against the committed catalog and committed the generated PNGs plus the updated `item.json` asset entries back into the repo.
 
-![List view with raster thumbnails alongside exercise entries](/assets/images/future/174-welcome-thumbnails.png)
-*Raster thumbnails appear inline in the list view, with SVG spatial thumbnails as fallback*
+Result: 73 of 73 plots now ship with both thumbnail sizes. Every first-run demo — whether on Heroku Review Apps or a fresh clone — opens to a populated gallery rather than a sea of SVG fallbacks.
+
+![Contact sheet of all 73 small (200x150) thumbnails produced by the retro-capture run](/assets/images/future-debrief/shipped-thumbnail-capture-and-gallery-preview/retro-capture-contact-sheet.png)
+
+The count check — `plots with thumbnail.png / total plots = 73/73`, and the same for `thumbnail-sm.png` and both asset entries — is recorded at [`evidence/retro-capture-count.md`](https://github.com/debrief/debrief-future/tree/main/specs/174-thumbnail-capture/evidence/retro-capture-count.md). It satisfies SC-007 (100% coverage) and FR-014 (one-off bulk-commit of the generated artefacts).
 
 ## What's Next
 
