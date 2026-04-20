@@ -38,6 +38,38 @@ mean the same clock. Durations ≥1s render with a single decimal (`1.0s`,
 jitter of mixed `1s` / `2.3s` formatting; sub-second values stay as
 `Xms`.
 
+## Screenshots
+
+The default Timeline view: five cards, each with a tool-category icon, a
+step number, track badges, a UTC timestamp, a formatted duration, and a
+row of parameter chips. Red-dot markers flag values that departed from
+their defaults.
+
+![Timeline view of the Log panel — five rich cards showing Range & Bearing, Closest Approach, Track Statistics, change-track-color, and load-rep, each with category icons, track badges, UTC timestamps, durations, and parameter chips](/assets/images/future-debrief/shipped-log-panel-rich-card-ux/component-light.png)
+*Timeline view with mixed parameter types and a "No parameters" row on Track Statistics.*
+
+One card per tool-category icon so the full icon vocabulary is visible
+at a glance — import, style, calc, filter, snapshot, and the neutral
+grey fallback for unknown tools.
+
+![Six cards, one per tool category — import-rep, change-color, bearing-between-tracks, time-filter, export-png (Manual checkpoint), and custom-unknown-tool with the grey fallback icon](/assets/images/future-debrief/shipped-log-panel-rich-card-ux/all-categories.png)
+*All five category icons plus the neutral-grey fallback for unregistered tools.*
+
+Edge cases in one frame: a snapshot entry rendered as `Manual
+checkpoint` with no duration, an operation with no parameters shown as
+muted italic text, and a three-track badge row wrapping to a second
+line.
+
+![Four cards exercising edge cases — a Manual checkpoint snapshot, a No parameters row, a colour chip, and a multi-track badge wrap](/assets/images/future-debrief/shipped-log-panel-rich-card-ux/edge-cases.png)
+*`Manual checkpoint`, `No parameters`, colour-swatch chip, and multi-track badge wrap.*
+
+A disabled entry renders at reduced opacity with a red-tinted `Disabled`
+badge, but remains fully interactive — parameter chips still show,
+selection still works.
+
+![A card for bearing-between-tracks rendered at 50% opacity with a red Disabled badge in the meta row, parameters still visible beneath](/assets/images/future-debrief/shipped-log-panel-rich-card-ux/disabled-state.png)
+*Disabled card — reduced opacity, explicit badge, parameters preserved.*
+
 ## Before and After
 
 | | Before | After |
