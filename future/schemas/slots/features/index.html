@@ -246,7 +246,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../classes/BaseFeatureProperties/" class="md-tabs__link">
+        <a href="../../classes/Any/" class="md-tabs__link">
           
   
   
@@ -625,6 +625,8 @@
       
         
       
+        
+      
     
     
     
@@ -669,6 +671,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/Any/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class: Any
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1133,62 +1163,6 @@
     
   
     Class: GeoJSONEmptyPoint
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../classes/GeoJSONFeature/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Class: GeoJSONFeature
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../classes/GeoJSONGeometry/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Class: GeoJSONGeometry
   
 
     
@@ -2085,6 +2059,62 @@
     
   
     Class: PropertiesProvenanceEntry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/RawGeoJSONFeature/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class: RawGeoJSONFeature
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../classes/RawGeoJSONFeatureCollection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class: RawGeoJSONFeatureCollection
   
 
     
@@ -12154,13 +12184,18 @@ Alias: features</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../../classes/SessionState/">SessionState</a></td>
-<td>Root entity containing all session state slices (FR-001, FR-002)</td>
+<td><a href="../../classes/SessionFile/">SessionFile</a></td>
+<td>Persisted session file format (FR-024)</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/SessionFile/">SessionFile</a></td>
-<td>Persisted session file format (FR-024)</td>
+<td><a href="../../classes/RawGeoJSONFeatureCollection/">RawGeoJSONFeatureCollection</a></td>
+<td>Parse-boundary GeoJSON FeatureCollection (RFC 7946 §3</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../../classes/SessionState/">SessionState</a></td>
+<td>Root entity containing all session state slices (FR-001, FR-002)</td>
 <td>no</td>
 </tr>
 </tbody>
@@ -12194,9 +12229,10 @@ Alias: features</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">features</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">features</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">domain_of</span><span class="p">:</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SessionState</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SessionFile</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RawGeoJSONFeatureCollection</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SessionState</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SessionFile</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 </code></pre></div>
 </details>
 

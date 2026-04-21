@@ -5,6 +5,10 @@
          <lastmod>2026-04-21</lastmod>
     </url>
     <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/classes/Any/</loc>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/BaseFeatureProperties/</loc>
          <lastmod>2026-04-21</lastmod>
     </url>
@@ -70,14 +74,6 @@
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONEmptyPoint/</loc>
-         <lastmod>2026-04-21</lastmod>
-    </url>
-    <url>
-         <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
-    </url>
-    <url>
-         <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONGeometry/</loc>
          <lastmod>2026-04-21</lastmod>
     </url>
     <url>
@@ -206,6 +202,14 @@
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PropertiesProvenanceEntry/</loc>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RawGeoJSONFeature/</loc>
+         <lastmod>2026-04-21</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RawGeoJSONFeatureCollection/</loc>
          <lastmod>2026-04-21</lastmod>
     </url>
     <url>
