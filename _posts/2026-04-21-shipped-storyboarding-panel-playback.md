@@ -33,8 +33,13 @@ Storybook captures for the three headline affordances — transport row, multi-S
 
 ![Hard-block modal with role=dialog aria-modal, body naming the missing feature IDs (track-nimitz, annotation-bearing-lock), two action buttons 'Jump past this scene' and 'Open for editing' — light theme](/assets/images/future-debrief/shipped-storyboarding-panel-playback/storyboard-panel-hardblock-light.png)
 
-Dark + VS Code theme variants are checked in alongside these three:
-[`evidence/screenshots/`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/screenshots/).
+Only one light-theme capture per story is checked in as canonical
+evidence. Under the Storybook sandbox the panel's VS Code CSS tokens
+resolve to the same palette regardless of the theme globals, so the
+originally-planned dark / vscode variants were byte-identical
+duplicates and have been dropped. Under a real VS Code host the
+tokens diverge as expected (verified at unit level). The behaviour is
+the same as #216's Storyboard captures.
 
 ### Forward-through interaction
 
