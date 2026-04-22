@@ -19,18 +19,26 @@ The slice is 23 commits on top of #216. It adds one `StoryboardPlaybackService` 
 
 ## Screenshots
 
-Screenshots and an interaction GIF are deferred alongside the rest of this repo's VS Code webview E2E artefacts — every such run in the project is blocked by Blocker #143 (openvscode-server iframe accessibility). The 9 Storybook theme PNGs (3 stories × 3 themes), the interaction GIF, and the two E2E PNGs all live behind the same unblock.
+Storybook captures for the three headline affordances — transport row, multi-Storyboard dropdown, and hard-block modal — ship with this post. They come from the same Playwright + Storybook harness that #216 used (`shared/components/e2e/StoryboardPanel.spec.ts`), auto-booted against `localhost:6006`.
 
-- `evidence/screenshots/interaction.gif` — *deferred* — Forward-through-storyboard: click → map `flyTo` → scrubber narrow → active rectangle highlights.
-- `evidence/screenshots/storyboard-panel-transport-{light,dark,vscode}.png` — *deferred* — TransportRow across three themes.
-- `evidence/screenshots/storyboard-panel-multi-{light,dark,vscode}.png` — *deferred* — multi-Storyboard dropdown across three themes.
-- `evidence/screenshots/storyboard-panel-hardblock-{light,dark,vscode}.png` — *deferred* — HardBlockModal across three themes.
-- `evidence/screenshots/e2e-hardblock.png` — *deferred* — native VS Code modal for a missing-feature hard-block.
-- `evidence/screenshots/e2e-dropdown-switch.png` — *deferred* — dropdown switch with rectangles updating.
+### TransportRow — Forward / Backward + "Scene N of M" counter
 
-Full explanation + unblock plan: [`evidence/screenshots/README.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/screenshots/README.md).
+![Storyboard panel with three Scene rows, scene-1 active (bold-outlined highlight), TransportRow at the bottom with Backward disabled + Forward enabled + 'Scene 1 of 3' counter — light theme](/assets/images/future-debrief/shipped-storyboarding-panel-playback/storyboard-panel-transport-light.png)
 
-Meanwhile, the end-to-end flow has an ASCII + narrative tour in [`evidence/usage-example.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/usage-example.md) and a Mermaid sequence diagram in [`evidence/feature-integration.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/feature-integration.md).
+### Multi-Storyboard header — dropdown + overflow menu
+
+![Storyboard panel with header dropdown populated from three Storyboards (Commander's view, ASW evidence, Training debrief), overflow menu trigger on the right, five Scenes in the active list, scene-2 highlighted — light theme](/assets/images/future-debrief/shipped-storyboarding-panel-playback/storyboard-panel-multi-light.png)
+
+### HardBlockModal — Scene can't render
+
+![Hard-block modal with role=dialog aria-modal, body naming the missing feature IDs (track-nimitz, annotation-bearing-lock), two action buttons 'Jump past this scene' and 'Open for editing' — light theme](/assets/images/future-debrief/shipped-storyboarding-panel-playback/storyboard-panel-hardblock-light.png)
+
+Dark + VS Code theme variants are checked in alongside these three:
+[`evidence/screenshots/`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/screenshots/).
+
+Three artefacts remain deferred behind Blocker #143 (repo-wide openvscode-server iframe hierarchy): the forward-through-storyboard interaction GIF (`interaction.gif`), the native-VS Code hard-block modal screenshot (`e2e-hardblock.png`), and the dropdown-switch rectangle-refresh screenshot (`e2e-dropdown-switch.png`). Unblock plan + rationale in [`evidence/screenshots/README.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/screenshots/README.md).
+
+The end-to-end flow also has a narrative tour in [`evidence/usage-example.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/usage-example.md) and a Mermaid sequence diagram in [`evidence/feature-integration.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/feature-integration.md).
 
 ## By the Numbers
 
