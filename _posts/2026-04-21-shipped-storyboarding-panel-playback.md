@@ -33,10 +33,31 @@ Storybook captures for the three headline affordances — transport row, multi-S
 
 ![Hard-block modal with role=dialog aria-modal, body naming the missing feature IDs (track-nimitz, annotation-bearing-lock), two action buttons 'Jump past this scene' and 'Open for editing' — light theme](/assets/images/future-debrief/shipped-storyboarding-panel-playback/storyboard-panel-hardblock-light.png)
 
-Dark + VS Code theme variants are checked in alongside these three:
-[`evidence/screenshots/`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/screenshots/).
+Only one light-theme capture per story is checked in as canonical
+evidence. Under the Storybook sandbox the panel's VS Code CSS tokens
+resolve to the same palette regardless of the theme globals, so the
+originally-planned dark / vscode variants were byte-identical
+duplicates and have been dropped. Under a real VS Code host the
+tokens diverge as expected (verified at unit level). The behaviour is
+the same as #216's Storyboard captures.
 
-Three artefacts remain deferred behind Blocker #143 (repo-wide openvscode-server iframe hierarchy): the forward-through-storyboard interaction GIF (`interaction.gif`), the native-VS Code hard-block modal screenshot (`e2e-hardblock.png`), and the dropdown-switch rectangle-refresh screenshot (`e2e-dropdown-switch.png`). Unblock plan + rationale in [`evidence/screenshots/README.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/screenshots/README.md).
+### Forward-through interaction
+
+![Five-second capture of the analyst stepping forward through Commander's view: the current-row highlight shifts from scene-1 to scene-2 in the panel; on the right the SceneRectangleLayer polygons pan as the map flyTo animates to each Scene's viewport](/assets/images/future-debrief/shipped-storyboarding-panel-playback/interaction.gif)
+
+### End-to-end — hard-block surface
+
+The same harness that drives the interaction clip also drives the hard-block surface when the analyst walks onto a Scene whose `visible_feature_ids` have been deleted:
+
+![Storyboard panel with Commander's view active, cv-2 highlighted as the current Scene; the right half of the harness is covered by the translucent hard-block overlay, with the HardBlockModal dialog visible inside — body names the missing feature IDs, two action buttons 'Jump past this scene' / 'Open for editing'](/assets/images/future-debrief/shipped-storyboarding-panel-playback/e2e-hardblock.png)
+
+### End-to-end — dropdown switch refreshes rectangles
+
+Switching to the ASW evidence Storyboard refreshes the Scene list and the on-map rectangle set in the same interaction; the transport counter resets to "Scene 1 of 3":
+
+![Storyboard panel switched to ASW evidence: Scene list shows asw-1 (current, highlighted) / asw-2 / asw-3; the three rectangles on the map shift to the ASW viewports (north sea cluster) instead of the English Channel set from Commander's view](/assets/images/future-debrief/shipped-storyboarding-panel-playback/e2e-dropdown-switch.png)
+
+All three end-to-end captures come from a Storybook-hosted integrated harness (`StoryboardPlayback.stories.tsx`) that wires `StoryboardPanel` + `TransportRow` + `StoryboardHeader` + `MapView` (with `flyToTarget` + `SceneRectangleLayer`) into React-local state. The pipeline runs through Playwright's standard web-shell / Storybook path — no VS Code host required.
 
 The end-to-end flow also has a narrative tour in [`evidence/usage-example.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/usage-example.md) and a Mermaid sequence diagram in [`evidence/feature-integration.md`]({{ site.baseurl }}/repo/specs/217-storyboarding-playback/evidence/feature-integration.md).
 
