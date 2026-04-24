@@ -2,1506 +2,1514 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/Any/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/BaseFeatureProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/BranchOrigin/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/BranchRecord/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/BrowserFilterSlice/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/CircleAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/CircleAnnotationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/Coordinate/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/DatasetAxisMetadata/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/DatasetDataPoint/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/DatasetEntry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/DatasetMetadata/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/DatasetSeries/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/DocumentSlice/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/FeatureSelection/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/FeaturesSlice/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/FileProvEntry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONEmptyPoint/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONLineString/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONMultiLineString/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONMultiPoint/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONMultiPolygon/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONPoint/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/GeoJSONPolygon/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/InputFeatureState/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/LastToolExecution/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/LevelDefinition/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/LineAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/LineAnnotationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/LineProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/LogEntry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/MeasuredArrayPosition/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/MultiPointFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/MultiPointFeatureProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/MultiPolygonFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/MultiPolygonFeatureProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/NarrativeEntry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/NarrativeEntryProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ParameterValue/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PlatformRecord/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PlotSummary/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PlotTimeExtent/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PointMetadataEntry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PointProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PolyAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PolyAnnotationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PolygonProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PositionStyle/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PositionStyleOverride/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/PropertiesProvenanceEntry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RawGeoJSONFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RawGeoJSONFeatureCollection/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RectangleAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/RectangleAnnotationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ReferenceLocation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ReferenceLocationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ResultTypePath/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ResultsSlice/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SceneFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SceneProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SegmentMetadata/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SelectionRequirement/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SensorContact/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SensorData/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SessionFile/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SessionState/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SnapshotLinks/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SnapshotRef/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SpatialSlice/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/StacExtensionProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/StacItemSummary/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/StoryboardFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/StoryboardProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SystemRecordProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SystemState/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/SystemStateProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TUAData/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TUASolution/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TemporalSlice/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TextAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TextAnnotationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TimeFilter/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TimeInstant/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TimeRange/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TimeStep/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TimestampedPosition/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/Tool/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ToolParameter/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ToolResultAnnotations/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TrackFeature/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TrackProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TrackStyle/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/TuneAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/VectorAnnotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/VectorAnnotationProperties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/Viewport/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/ViewportPolygon/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/classes/WasGeneratedBy/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ActivityType/</loc>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/AddressingMode/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ArrayCentreModeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/CardinalDirectionEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/DisplayModeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/DurationPresetEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ErrorCategory/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/FeatureKindEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/FileProvDirectionEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/FileProvEventTypeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/LabelLocationEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/LineCapEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/LineJoinEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/LineLabelPositionEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/LineStyleEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/LocationTypeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/MarkerSymbolEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/NamedColorEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/NumericPresetEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/OutputKindEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ParameterTypeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/PlaybackStateEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/PointShapeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ReferencePointPatternEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ResultCategoryEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/ResultTopType/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/SegmentTypeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/SystemStateTypeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/TimeUnitEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/TrackTypeEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/enums/VesselDomainEnum/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/schemas/debrief/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/%24schema/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/activity_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
+    </url>
+    <url>
+         <loc>https://debrief.github.io/debrief-future/schema-docs/slots/activity_type/</loc>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/addressingMode/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/after_leg/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/agent/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/ambiguous_bearing/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/array_centre_mode/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/asset/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/base_frequency/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/bbox/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/bearing/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/before_leg/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/branch_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/branch_origin/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/branched_at/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/branched_from/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/branches/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/catalog_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/center/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/centre_lat/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/centre_lon/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/color/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/comment/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/contacts/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/coordinates/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/course/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/currentTime/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/dash_array/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/data_points/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/datetime/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/default/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/default_position_style/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/default_value/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/deletedFeatures/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/depth/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/description/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/direction/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/dirty/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/disabled/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/displayMode/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/display_name/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/document/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/domain/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/end/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/end_datetime/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/end_time/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/epoch/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/execution_duration/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/featureCollectionUri/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/featureIds/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/feature_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/feature_set_hash/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/feature_tags/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/features/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/fields/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/fill/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/fill_color/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/fill_opacity/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/frequency/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/generated/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/generated_result_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/geometry/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/has_ambiguous/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/has_bearing/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/has_frequency/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/hiddenFeatureIds/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/host_sensor_name/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/host_track_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/host_track_name/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/href/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/input_state/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/iso/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/item_path/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/kind/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/label/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/label_interval/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/label_location/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/last_tool_execution/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/latitude/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/legacy_style/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/line/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/line_cap/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/line_join/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/line_number/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/line_style/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/line_thickness/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/location/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/location_count/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/location_type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/longitude/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/max/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/maxima/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/measured_positions/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/metadata/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/metadata_expression/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/metadata_filtered_ids/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/method/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/min/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/minima/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/name/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/nationality/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/new_value/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/next/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/offset/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/offset_bearing/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/offset_range/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/opacity/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/orientation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/origin/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/overrides/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/param_type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/parameter/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/parameters/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/path/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/platform_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/platform_name/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/platforms/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/playbackRate/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/playbackState/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/point/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/point_metadata/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/position_style_overrides/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/positions/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/prev/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/previous_value/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/primary/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/properties/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/prov_entry_count/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/provenance/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/provenance_log/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/put_label_at/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/radius/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/range/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/rationale/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/required/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/requirements/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/resultType/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/result_layer_ids/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/result_layers/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/rotation/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/savePath/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/savedAt/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/schemaVersion/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/schema_version/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/segment_type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/segments/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/selected_ids/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/selection/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/sensors/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/series/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/series_key/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/shape/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/show_label/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/show_symbol/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/snapshot_links/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/solutions/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/sourceFeatures/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source_asset/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source_feature_ids/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source_features/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source_path/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/source_tool/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/spatial/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/spatial_filter_active/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/speed/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/start/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/start_datetime/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/start_time/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/state_type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/stepSize/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/store_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/storyboard_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/stroke/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/style/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/symbol/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/symbol_interval/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tags/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/target_asset/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/temporal/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/temporal_filter_active/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/text/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/thumbnail_asset_ref/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/time/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/timeFilter/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/timeRange/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/time_extent/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/time_range/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/timestamp/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/title/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tool/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tool_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tool_version/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/track_count/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/track_id/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/track_type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/transition_duration_ms/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tuas/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tunable/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/tune/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/unit/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/units/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/used/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/valid_from/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/valid_until/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/value/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/version/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/vertex_count/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/vessel_class/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/vessel_role/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/vessel_type/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/viewport/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/visible/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/visible_feature_ids/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/was_generated_by/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/weight/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/worm_in_hole/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/xAxis/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/x_value/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/yAxis/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/y_value/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/slots/zoom/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Boolean/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/CSSColor/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Coordinate/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Curie/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Date/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/DateOrDatetime/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Datetime/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Decimal/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Double/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Float/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Integer/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Jsonpath/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Jsonpointer/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Ncname/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Nodeidentifier/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Objectidentifier/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Sparqlpath/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/String/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Time/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Uri/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
     <url>
          <loc>https://debrief.github.io/debrief-future/schema-docs/types/Uriorcurie/</loc>
-         <lastmod>2026-04-21</lastmod>
+         <lastmod>2026-04-24</lastmod>
     </url>
 </urlset>

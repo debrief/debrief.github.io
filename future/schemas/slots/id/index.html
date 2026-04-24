@@ -268,7 +268,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../enums/AddressingMode/" class="md-tabs__link">
+        <a href="../../enums/ActivityType/" class="md-tabs__link">
           
   
   
@@ -3492,6 +3492,8 @@
       
         
       
+        
+      
     
     
     
@@ -3536,6 +3538,34 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../enums/ActivityType/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enum: ActivityType
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -4938,6 +4968,8 @@
       
         
       
+        
+      
     
     
     
@@ -5038,6 +5070,34 @@
     
   
     Slot: activity_id
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../activity_type/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Slot: activity_type
   
 
     
@@ -12184,23 +12244,18 @@ Alias: id</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../../classes/SceneFeature/">SceneFeature</a></td>
-<td>GeoJSON Feature representing a Scene child entity</td>
+<td><a href="../../classes/NarrativeEntry/">NarrativeEntry</a></td>
+<td>GeoJSON Feature for timestamped narrative/log entries</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/CircleAnnotation/">CircleAnnotation</a></td>
-<td>GeoJSON Feature for circle annotations</td>
+<td><a href="../../classes/StacItemSummary/">StacItemSummary</a></td>
+<td>Minimal STAC Item projection for browser tree display and metadata filtering</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/TextAnnotation/">TextAnnotation</a></td>
-<td>GeoJSON Feature for text annotations at a position</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../../classes/RectangleAnnotation/">RectangleAnnotation</a></td>
-<td>GeoJSON Feature for rectangle annotations</td>
+<td><a href="../../classes/LineAnnotation/">LineAnnotation</a></td>
+<td>GeoJSON Feature for line segment annotations</td>
 <td>no</td>
 </tr>
 <tr>
@@ -12209,33 +12264,13 @@ Alias: id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/ReferenceLocation/">ReferenceLocation</a></td>
-<td>GeoJSON Feature for fixed reference points or reference point sets</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../../classes/TrackFeature/">TrackFeature</a></td>
-<td>GeoJSON Feature representing a vessel track</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../../classes/PlatformRecord/">PlatformRecord</a></td>
 <td>Fully-resolved metadata for a single platform within a STAC item</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/MultiPointFeature/">MultiPointFeature</a></td>
-<td>GeoJSON Feature for multi-point tool results</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../../classes/PlotSummary/">PlotSummary</a></td>
-<td>Projection of a STAC Item for UI consumption (e</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../../classes/MultiPolygonFeature/">MultiPolygonFeature</a></td>
-<td>GeoJSON Feature for multi-polygon tool results</td>
+<td><a href="../../classes/TrackFeature/">TrackFeature</a></td>
+<td>GeoJSON Feature representing a vessel track</td>
 <td>no</td>
 </tr>
 <tr>
@@ -12249,23 +12284,38 @@ Alias: id</p>
 <td>no</td>
 </tr>
 <tr>
+<td><a href="../../classes/PlotSummary/">PlotSummary</a></td>
+<td>Projection of a STAC Item for UI consumption (e</td>
+<td>no</td>
+</tr>
+<tr>
 <td><a href="../../classes/SystemState/">SystemState</a></td>
 <td>GeoJSON Feature for storing non-spatial system state</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/SceneProperties/">SceneProperties</a></td>
-<td>Properties class for a Scene child Feature</td>
+<td><a href="../../classes/RectangleAnnotation/">RectangleAnnotation</a></td>
+<td>GeoJSON Feature for rectangle annotations</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/NarrativeEntry/">NarrativeEntry</a></td>
-<td>GeoJSON Feature for timestamped narrative/log entries</td>
+<td><a href="../../classes/VectorAnnotation/">VectorAnnotation</a></td>
+<td>GeoJSON Feature for vector annotations</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/StoryboardFeature/">StoryboardFeature</a></td>
-<td>GeoJSON Feature representing a Storyboard parent entity</td>
+<td><a href="../../classes/SceneFeature/">SceneFeature</a></td>
+<td>GeoJSON Feature representing a Scene child entity</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../../classes/MultiPolygonFeature/">MultiPolygonFeature</a></td>
+<td>GeoJSON Feature for multi-polygon tool results</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../../classes/ReferenceLocation/">ReferenceLocation</a></td>
+<td>GeoJSON Feature for fixed reference points or reference point sets</td>
 <td>no</td>
 </tr>
 <tr>
@@ -12274,18 +12324,28 @@ Alias: id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/LineAnnotation/">LineAnnotation</a></td>
-<td>GeoJSON Feature for line segment annotations</td>
+<td><a href="../../classes/SceneProperties/">SceneProperties</a></td>
+<td>Properties class for a Scene child Feature</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/StacItemSummary/">StacItemSummary</a></td>
-<td>Minimal STAC Item projection for browser tree display and metadata filtering</td>
+<td><a href="../../classes/StoryboardFeature/">StoryboardFeature</a></td>
+<td>GeoJSON Feature representing a Storyboard parent entity</td>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../../classes/VectorAnnotation/">VectorAnnotation</a></td>
-<td>GeoJSON Feature for vector annotations</td>
+<td><a href="../../classes/MultiPointFeature/">MultiPointFeature</a></td>
+<td>GeoJSON Feature for multi-point tool results</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../../classes/TextAnnotation/">TextAnnotation</a></td>
+<td>GeoJSON Feature for text annotations at a position</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../../classes/CircleAnnotation/">CircleAnnotation</a></td>
+<td>GeoJSON Feature for circle annotations</td>
 <td>no</td>
 </tr>
 </tbody>
