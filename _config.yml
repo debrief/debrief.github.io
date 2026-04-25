@@ -28,6 +28,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
 sass:
     style: :compressed
 

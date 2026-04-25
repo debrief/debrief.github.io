@@ -69,9 +69,6 @@ $ grep -c '!\[' specs/176-log-panel-ux/media/unified-post.md
 ```
 
 ```markdown
-![All six tool-category icons in a single view](../evidence/screenshots/all-categories.png)
-![Snapshot entry, empty params, deleted track, multi-track wrap](../evidence/screenshots/edge-cases.png)
-![Disabled card at reduced opacity with the Disabled badge](../evidence/screenshots/disabled-state.png)
 ```
 
 After (`71360579` — reclassified to composite):

@@ -1,15 +1,31 @@
 ---
 layout: future-post
-title: "Shipped: Tool Results Architecture"
-date: 2026-01-30
-track: [credibility]
+title: Building Tool Results Architecture
+date: '2026-01-30'
 author: Ian
+track: credibility
+tags:
+- mcp
+- tool-results
+excerpt: Typed result system connecting calculation tools to storage, with 88 tests
+  passing across Python and TypeScript.
 reading_time: 5
-tags: [tracer-bullet, tool-results, mcp, stac]
-excerpt: "Typed result system connecting calculation tools to storage, with 88 tests passing across Python and TypeScript."
 ---
+<!-- OPENER SYNTHESISED FROM spec.md — verify before publish -->
 
-## What We Built
+## What We're Building
+
+Document tool results architecture covering result types, persistence, MCP compliance, and user feedback
+
+## How It Fits
+
+_Synthesis fallback — no in-scope/dependencies bullets detected._
+
+## Key Decisions
+
+- System MUST classify every tool result into exactly one of four top-level types: mutation, addition, deletion, or artifact.
+- System MUST return tool results as MCP-compliant responses containing a content array of one or more items using standard MCP content types.
+- Every content item in a tool result MUST include three required annotations: result type, source features, and a human-readable label.
 
 When a calculation tool smooths a track or computes a closest point of approach, something needs to classify that result, persist it to the STAC catalog, and update the display. We've now built the machinery that connects these pieces.
 
@@ -87,4 +103,4 @@ This architecture supports the workflow where a calculation tool produces result
 The hierarchical type system is designed for contrib extensions, but we haven't tested it with a real organisation-specific sub-type yet. That will be valuable validation once we have contrib partners.
 
 → [See the spec](https://github.com/debrief/debrief-future/blob/main/specs/041-document-tool-results/spec.md)
-→ [View the PR](https://github.com/debrief/debrief-future/pull/136)
+→ [View the PR](https://github.com/debrief/debrief-future/pull/134)
