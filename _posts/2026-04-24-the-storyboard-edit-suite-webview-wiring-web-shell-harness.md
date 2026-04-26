@@ -1,14 +1,20 @@
 ---
 layout: future-post
-title: "Building the Storyboard edit suite — webview wiring + web-shell harness"
-date: 2026-04-24
-track: [credibility]
+title: Building the Storyboard edit suite — webview wiring + web-shell harness
+date: '2026-04-24'
 author: Ian
+track: credibility
+tags:
+- storyboarding
+- vscode
+- playwright
+- testing
+- reducer
+excerpt: 'Wiring up the last-mile of the Storyboard panel: webview reducer, command
+  actions, web-shell harness for Playwright.'
 reading_time: 7
-tags: [storyboarding, vscode-extension, playwright, testing, reducer]
-excerpt: "A chevron next to each Scene, a right-click menu for the full action set, stale badges that clear on refresh — and a web-shell harness that drives the whole polish loop without VS Code."
+spec: 230-storyboard-edit-wiring
 ---
-
 ## What We're Building
 
 The Storyboard panel has always promised a polish loop: capture a scene, tweak its description, mark the stale ones, refresh the thumbnails, reorder, duplicate, delete. In #218 we shipped the machinery that makes all of that work — the services, the dispatcher, the components, the command handlers — but the last mile was still missing. Analysts could reach every action, just not from inside the panel. Edits lived in the command palette, the overflow menu was a stub, and the stale badge had nowhere to click through to. The panel looked half-wired because it was half-wired.
@@ -31,31 +37,14 @@ And the whole thing ships with zero new runtime dependencies. The reducer is `us
 
 ## Screenshots
 
-The web-shell harness is the primary E2E surface. Every flow below is reproducible in a browser by visiting `?storyboard-edit-harness=1` with the supported query-string knobs (`?stale=…`, `?pendingDelete=…`, `?missingData=…`).
+The web-shell harness is the primary E2E surface. Every flow below is reproducible in a browser by visiting `?storyboard-edit-harness=1` with the supported query-string knobs (`?stale=…`, `?pendingDelete=…`, `?missingData=…`). Screenshots land under `specs/218-storyboarding-edit/evidence/screenshots/` to close out #218's Phase 6 evidence artefact gap.
 
-**Panel at rest** — fixture Storyboard, three Scenes, chevron + overflow trigger visible on each row.
-
-![Storyboard panel at rest](/assets/images/future-debrief/storyboard-edit-suite-webview-wiring/storyboard-panel-default.png)
-
-**Inline edit form open** — chevron clicked, `<SceneEditForm>` rendered in place, `aria-expanded=true`.
-
-![Inline edit form open](/assets/images/future-debrief/storyboard-edit-suite-webview-wiring/storyboard-edit-form-open.png)
-
-**Overflow menu open** — six items rendered via `role=menu`/`role=menuitem`, positioned from the row's bounding rect.
-
-![Overflow menu open](/assets/images/future-debrief/storyboard-edit-suite-webview-wiring/storyboard-overflow-menu-open.png)
-
-**Undo toast after Delete** — row soft-removed, session-scoped undo pinned to the bottom.
-
-![Undo toast after delete](/assets/images/future-debrief/storyboard-edit-suite-webview-wiring/storyboard-undo-toast.png)
-
-**Stale badge with tooltip** — Scenes flagged stale by the `?stale` knob, unresolved feature IDs rendered.
-
-![Stale badge with tooltip](/assets/images/future-debrief/storyboard-edit-suite-webview-wiring/storyboard-stale-badge.png)
-
-**Missing-data remediation** — hard-block affordance inside the edit form.
-
-![Missing data remediation](/assets/images/future-debrief/storyboard-edit-suite-webview-wiring/storyboard-missing-data-remediation.png)
+- **Panel at rest** — fixture Storyboard, three Scenes, chevron + overflow trigger visible on each row. [`storyboard-panel-default.png`](../specs/218-storyboarding-edit/evidence/screenshots/storyboard-panel-default.png)
+- **Inline edit form open** — chevron clicked, `<SceneEditForm>` rendered in place, `aria-expanded=true`. [`storyboard-edit-form-open.png`](../specs/218-storyboarding-edit/evidence/screenshots/storyboard-edit-form-open.png)
+- **Overflow menu open** — six items rendered via `role=menu`/`role=menuitem`, positioned from the row's bounding rect. [`storyboard-overflow-menu-open.png`](../specs/218-storyboarding-edit/evidence/screenshots/storyboard-overflow-menu-open.png)
+- **Undo toast after Delete** — row soft-removed, session-scoped undo pinned to the bottom. [`storyboard-undo-toast.png`](../specs/218-storyboarding-edit/evidence/screenshots/storyboard-undo-toast.png)
+- **Stale badge with tooltip** — Scenes flagged stale by the `?stale` knob, unresolved feature IDs rendered. [`storyboard-stale-badge.png`](../specs/218-storyboarding-edit/evidence/screenshots/storyboard-stale-badge.png)
+- **Missing-data remediation** — hard-block affordance inside the edit form. [`storyboard-missing-data-remediation.png`](../specs/218-storyboarding-edit/evidence/screenshots/storyboard-missing-data-remediation.png)
 
 ## By the Numbers
 
