@@ -63,9 +63,19 @@ The strangler-fig migration paid off on the VS Code side. The 1700+ LOC of pre-e
 
 The ESLint rule was easier to write than I expected because the project already had `shared/eslint-rules/` with the right plumbing. Article IV.4 without `no-restricted-imports`/`no-restricted-globals` would have been theatrical — a paragraph in the constitution and nothing stopping the next PR from `import * as fs from 'fs'` in browser code. With the rule, the principle has teeth.
 
+## Screenshots
+
+The before/after visual contrast is the headline of this work — the yellow "Session-only" warning either appears at the top of the rail or it doesn't, depending on whether the writer's capability check finds a healthy IndexedDB.
+
+![Web-shell Storyboard rail with a captured scene and no warning banner — IndexedDB is healthy, so the writer persists the capture and the badge stays hidden](/assets/images/future-debrief/shipped-web-shell-stac-writes/after-no-badge.png)
+
+![Same Storyboard rail with the yellow Session-only banner at the top reading 'Session-only — captures persist only for this tab. Browser persistence unavailable.' — IndexedDB has been stubbed to undefined to simulate private mode or a blocked store](/assets/images/future-debrief/shipped-web-shell-stac-writes/before-session-only-badge.png)
+
+Both captured by `apps/web-shell/playwright/tests/stac-writes.spec.ts` running against the dev server via `node run-playwright.mjs stac-writes`. Two tests, both green, ~13s. The `@sparticuz/chromium` bundled binary makes this run in cloud sessions (Claude Code, CI, Lambda) without a Playwright browser CDN download.
+
 ## What's Next
 
-- **Rail re-hydration tests** — the rail re-hydrates scene thumbnails from IDB on plot load, but the test for "capture, reload, scene visible with thumbnail" is currently at the unit level via `fake-indexeddb`. A static-build Playwright run against `vite preview` is the next safety net.
+- **Capture-survives-reload GIF** — the rail re-hydrates scene thumbnails from IDB on plot load (`hydrateSceneThumbnailStoreFromIdb`), and the data-layer reload-survival is verified at unit level via `fake-indexeddb`. A < 5s reload-survival GIF in Playwright is the next visual safety net (we prototyped it, hit URL+GoldenLayout state restoration on reload, and pulled it for a dedicated follow-up rather than shipping a flaky test).
 - **Drawing-toolbar UI hookup** — `createStandaloneItem` exposes the data path for "save a new track", but the actual button in the drawing toolbar is deferred. The IDB write side is wired and tested; only the UI plumbing remains.
 - **Catalog zip export (Phase 2)** — "take your captures with you", round-trip back to VS Code or share with a colleague. The biggest deferred item; standalone spec.
 - **Refactor `stacWriterFs` from wrapping to literal extraction** — once the writer interface has bedded in, hoist the `writeSceneThumbnail` and `updateItemMetadataSync` bodies into `stacWriterFs` and slim the existing services to thin re-exports. Behaviourally equivalent; fewer lines of indirection. Captured as a follow-up tech-debt item.
