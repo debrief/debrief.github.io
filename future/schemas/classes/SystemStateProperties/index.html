@@ -960,6 +960,18 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../SceneThumbnailAssetEntry/">
+<span class="md-ellipsis">
+    
+  
+    Class: SceneThumbnailAssetEntry
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../SegmentMetadata/">
 <span class="md-ellipsis">
     
@@ -1890,6 +1902,18 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../enums/ToolCategoryEnum/">
+<span class="md-ellipsis">
+    
+  
+    Enum: ToolCategoryEnum
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../enums/TrackTypeEnum/">
 <span class="md-ellipsis">
     
@@ -1987,6 +2011,18 @@
     
   
     Slot: $schema
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../slots/active_storyboard_id/">
+<span class="md-ellipsis">
+    
+  
+    Slot: active_storyboard_id
   
 
     
@@ -2203,6 +2239,18 @@
     
   
     Slot: catalog_id
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../slots/category/">
+<span class="md-ellipsis">
+    
+  
+    Slot: category
   
 
     
@@ -3674,6 +3722,18 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../slots/roles/">
+<span class="md-ellipsis">
+    
+  
+    Slot: roles
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../slots/rotation/">
 <span class="md-ellipsis">
     
@@ -5069,6 +5129,8 @@
 <pre class="mermaid"><code> classDiagram
     class SystemStateProperties
     click SystemStateProperties href "../../classes/SystemStateProperties/"
+      SystemStateProperties : active_storyboard_id
+
       SystemStateProperties : bbox
 
       SystemStateProperties : center
@@ -5137,7 +5199,7 @@
 <tr>
 <td><a href="../../slots/state_type/">state_type</a></td>
 <td>1 <br/> <a href="../../enums/SystemStateTypeEnum/">SystemStateTypeEnum</a></td>
-<td>Discriminator for state variant (temporal, spatial, selection)</td>
+<td>Discriminator for state variant (temporal, spatial, selection, active_storybo...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -5174,6 +5236,12 @@
 <td><a href="../../slots/selected_ids/">selected_ids</a></td>
 <td>* <br/> <a href="../../types/String/">String</a></td>
 <td>Array of selected feature IDs - for selection state</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../../slots/active_storyboard_id/">active_storyboard_id</a></td>
+<td>0..1 <br/> <a href="../../types/String/">String</a></td>
+<td>Storyboard properties</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -5262,7 +5330,7 @@
 <a href="#__codelineno-0-29" id="__codelineno-0-29" name="__codelineno-0-29"></a><span class="w">    </span><span class="nt">equals_string</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SYSTEM</span>
 <a href="#__codelineno-0-30" id="__codelineno-0-30" name="__codelineno-0-30"></a><span class="w">  </span><span class="nt">state_type</span><span class="p">:</span>
 <a href="#__codelineno-0-31" id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">state_type</span>
-<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Discriminator for state variant (temporal, spatial, selection)</span>
+<a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Discriminator for state variant (temporal, spatial, selection, active_storyboard)</span>
 <a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://debrief.info/schemas/geojson</span>
 <a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
 <a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
@@ -5332,18 +5400,26 @@
 <a href="#__codelineno-0-99" id="__codelineno-0-99" name="__codelineno-0-99"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
 <a href="#__codelineno-0-100" id="__codelineno-0-100" name="__codelineno-0-100"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <a href="#__codelineno-0-101" id="__codelineno-0-101" name="__codelineno-0-101"></a><span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a href="#__codelineno-0-102" id="__codelineno-0-102" name="__codelineno-0-102"></a><span class="w">  </span><span class="nt">provenance</span><span class="p">:</span>
-<a href="#__codelineno-0-103" id="__codelineno-0-103" name="__codelineno-0-103"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">provenance</span>
-<a href="#__codelineno-0-104" id="__codelineno-0-104" name="__codelineno-0-104"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROV-aligned provenance records (append-only log of tool operations)</span>
+<a href="#__codelineno-0-102" id="__codelineno-0-102" name="__codelineno-0-102"></a><span class="w">  </span><span class="nt">active_storyboard_id</span><span class="p">:</span>
+<a href="#__codelineno-0-103" id="__codelineno-0-103" name="__codelineno-0-103"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">active_storyboard_id</span>
+<a href="#__codelineno-0-104" id="__codelineno-0-104" name="__codelineno-0-104"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Storyboard properties.id the analyst last pinned for this plot (#237)</span>
 <a href="#__codelineno-0-105" id="__codelineno-0-105" name="__codelineno-0-105"></a><span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://debrief.info/schemas/geojson</span>
-<a href="#__codelineno-0-106" id="__codelineno-0-106" name="__codelineno-0-106"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<a href="#__codelineno-0-107" id="__codelineno-0-107" name="__codelineno-0-107"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BaseFeatureProperties</span>
+<a href="#__codelineno-0-106" id="__codelineno-0-106" name="__codelineno-0-106"></a><span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<a href="#__codelineno-0-107" id="__codelineno-0-107" name="__codelineno-0-107"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
 <a href="#__codelineno-0-108" id="__codelineno-0-108" name="__codelineno-0-108"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
-<a href="#__codelineno-0-109" id="__codelineno-0-109" name="__codelineno-0-109"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemRecordProperties</span>
-<a href="#__codelineno-0-110" id="__codelineno-0-110" name="__codelineno-0-110"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LogEntry</span>
-<a href="#__codelineno-0-111" id="__codelineno-0-111" name="__codelineno-0-111"></a><span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a href="#__codelineno-0-112" id="__codelineno-0-112" name="__codelineno-0-112"></a><span class="w">    </span><span class="nt">inlined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a href="#__codelineno-0-113" id="__codelineno-0-113" name="__codelineno-0-113"></a><span class="w">    </span><span class="nt">inlined_as_list</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-109" id="__codelineno-0-109" name="__codelineno-0-109"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<a href="#__codelineno-0-110" id="__codelineno-0-110" name="__codelineno-0-110"></a><span class="w">  </span><span class="nt">provenance</span><span class="p">:</span>
+<a href="#__codelineno-0-111" id="__codelineno-0-111" name="__codelineno-0-111"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">provenance</span>
+<a href="#__codelineno-0-112" id="__codelineno-0-112" name="__codelineno-0-112"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROV-aligned provenance records (append-only log of tool operations)</span>
+<a href="#__codelineno-0-113" id="__codelineno-0-113" name="__codelineno-0-113"></a><span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://debrief.info/schemas/geojson</span>
+<a href="#__codelineno-0-114" id="__codelineno-0-114" name="__codelineno-0-114"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<a href="#__codelineno-0-115" id="__codelineno-0-115" name="__codelineno-0-115"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BaseFeatureProperties</span>
+<a href="#__codelineno-0-116" id="__codelineno-0-116" name="__codelineno-0-116"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
+<a href="#__codelineno-0-117" id="__codelineno-0-117" name="__codelineno-0-117"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemRecordProperties</span>
+<a href="#__codelineno-0-118" id="__codelineno-0-118" name="__codelineno-0-118"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LogEntry</span>
+<a href="#__codelineno-0-119" id="__codelineno-0-119" name="__codelineno-0-119"></a><span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-120" id="__codelineno-0-120" name="__codelineno-0-120"></a><span class="w">    </span><span class="nt">inlined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-0-121" id="__codelineno-0-121" name="__codelineno-0-121"></a><span class="w">    </span><span class="nt">inlined_as_list</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 </details>
 <h3 id="induced">Induced<a class="headerlink" href="#induced" title="Permanent link">¶</a></h3>
@@ -5381,7 +5457,7 @@
 <a href="#__codelineno-1-31" id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">    </span><span class="nt">equals_string</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SYSTEM</span>
 <a href="#__codelineno-1-32" id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">  </span><span class="nt">state_type</span><span class="p">:</span>
 <a href="#__codelineno-1-33" id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">state_type</span>
-<a href="#__codelineno-1-34" id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Discriminator for state variant (temporal, spatial, selection)</span>
+<a href="#__codelineno-1-34" id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Discriminator for state variant (temporal, spatial, selection, active_storyboard)</span>
 <a href="#__codelineno-1-35" id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://debrief.info/schemas/geojson</span>
 <a href="#__codelineno-1-36" id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
 <a href="#__codelineno-1-37" id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">state_type</span>
@@ -5465,20 +5541,30 @@
 <a href="#__codelineno-1-115" id="__codelineno-1-115" name="__codelineno-1-115"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
 <a href="#__codelineno-1-116" id="__codelineno-1-116" name="__codelineno-1-116"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
 <a href="#__codelineno-1-117" id="__codelineno-1-117" name="__codelineno-1-117"></a><span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a href="#__codelineno-1-118" id="__codelineno-1-118" name="__codelineno-1-118"></a><span class="w">  </span><span class="nt">provenance</span><span class="p">:</span>
-<a href="#__codelineno-1-119" id="__codelineno-1-119" name="__codelineno-1-119"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">provenance</span>
-<a href="#__codelineno-1-120" id="__codelineno-1-120" name="__codelineno-1-120"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROV-aligned provenance records (append-only log of tool operations)</span>
+<a href="#__codelineno-1-118" id="__codelineno-1-118" name="__codelineno-1-118"></a><span class="w">  </span><span class="nt">active_storyboard_id</span><span class="p">:</span>
+<a href="#__codelineno-1-119" id="__codelineno-1-119" name="__codelineno-1-119"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">active_storyboard_id</span>
+<a href="#__codelineno-1-120" id="__codelineno-1-120" name="__codelineno-1-120"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Storyboard properties.id the analyst last pinned for this plot (#237)</span>
 <a href="#__codelineno-1-121" id="__codelineno-1-121" name="__codelineno-1-121"></a><span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://debrief.info/schemas/geojson</span>
-<a href="#__codelineno-1-122" id="__codelineno-1-122" name="__codelineno-1-122"></a><span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">provenance</span>
-<a href="#__codelineno-1-123" id="__codelineno-1-123" name="__codelineno-1-123"></a><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
-<a href="#__codelineno-1-124" id="__codelineno-1-124" name="__codelineno-1-124"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<a href="#__codelineno-1-125" id="__codelineno-1-125" name="__codelineno-1-125"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BaseFeatureProperties</span>
+<a href="#__codelineno-1-122" id="__codelineno-1-122" name="__codelineno-1-122"></a><span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<a href="#__codelineno-1-123" id="__codelineno-1-123" name="__codelineno-1-123"></a><span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">active_storyboard_id</span>
+<a href="#__codelineno-1-124" id="__codelineno-1-124" name="__codelineno-1-124"></a><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
+<a href="#__codelineno-1-125" id="__codelineno-1-125" name="__codelineno-1-125"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
 <a href="#__codelineno-1-126" id="__codelineno-1-126" name="__codelineno-1-126"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
-<a href="#__codelineno-1-127" id="__codelineno-1-127" name="__codelineno-1-127"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemRecordProperties</span>
-<a href="#__codelineno-1-128" id="__codelineno-1-128" name="__codelineno-1-128"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LogEntry</span>
-<a href="#__codelineno-1-129" id="__codelineno-1-129" name="__codelineno-1-129"></a><span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a href="#__codelineno-1-130" id="__codelineno-1-130" name="__codelineno-1-130"></a><span class="w">    </span><span class="nt">inlined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a href="#__codelineno-1-131" id="__codelineno-1-131" name="__codelineno-1-131"></a><span class="w">    </span><span class="nt">inlined_as_list</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-1-127" id="__codelineno-1-127" name="__codelineno-1-127"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<a href="#__codelineno-1-128" id="__codelineno-1-128" name="__codelineno-1-128"></a><span class="w">  </span><span class="nt">provenance</span><span class="p">:</span>
+<a href="#__codelineno-1-129" id="__codelineno-1-129" name="__codelineno-1-129"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">provenance</span>
+<a href="#__codelineno-1-130" id="__codelineno-1-130" name="__codelineno-1-130"></a><span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PROV-aligned provenance records (append-only log of tool operations)</span>
+<a href="#__codelineno-1-131" id="__codelineno-1-131" name="__codelineno-1-131"></a><span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://debrief.info/schemas/geojson</span>
+<a href="#__codelineno-1-132" id="__codelineno-1-132" name="__codelineno-1-132"></a><span class="w">    </span><span class="nt">alias</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">provenance</span>
+<a href="#__codelineno-1-133" id="__codelineno-1-133" name="__codelineno-1-133"></a><span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
+<a href="#__codelineno-1-134" id="__codelineno-1-134" name="__codelineno-1-134"></a><span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<a href="#__codelineno-1-135" id="__codelineno-1-135" name="__codelineno-1-135"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BaseFeatureProperties</span>
+<a href="#__codelineno-1-136" id="__codelineno-1-136" name="__codelineno-1-136"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemStateProperties</span>
+<a href="#__codelineno-1-137" id="__codelineno-1-137" name="__codelineno-1-137"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SystemRecordProperties</span>
+<a href="#__codelineno-1-138" id="__codelineno-1-138" name="__codelineno-1-138"></a><span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LogEntry</span>
+<a href="#__codelineno-1-139" id="__codelineno-1-139" name="__codelineno-1-139"></a><span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-1-140" id="__codelineno-1-140" name="__codelineno-1-140"></a><span class="w">    </span><span class="nt">inlined</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a href="#__codelineno-1-141" id="__codelineno-1-141" name="__codelineno-1-141"></a><span class="w">    </span><span class="nt">inlined_as_list</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 </details>
 </article>
