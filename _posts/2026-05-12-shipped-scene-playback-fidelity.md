@@ -20,7 +20,16 @@ A storyboard is only as good as the moments it captures. If an analyst frames a 
 | The currently-playing scene's rectangle was indistinguishable from the others on a busy map | The active scene picks up the same drop-shadow + pulse halo that selected tracks already use |
 | Scenes rendered as peer leaves in the feature list, scattered between tracks and other features | Each Storyboard folds its child Scenes under a single collapsible parent row, mirroring how Tracks group their Positions |
 
+![Storyboard panel with cv-1 selected and a glowing scene rectangle on the map; an outer, unselected rectangle has no halo](/assets/images/future-debrief/shipped-scene-playback-fidelity/scene-rect-halo-dark.png)
+*The currently-playing scene's rectangle picks up the same drop-shadow halo that selected tracks already use. The non-current rectangle (outer) has no glow.*
+
 Concretely: scenes now carry a `display_mode` (Full or Trail) and restore it on playback alongside the viewport; rectangles are computed from the real Leaflet bounds at capture time instead of a placeholder square; the active scene gets the canonical track-selection halo; and the feature list groups each storyboard's scenes under a collapsible parent row instead of mixing them in with tracks.
+
+![FeatureList collapsed — Engagement Brief storyboard row with a (5) scene-count badge sitting alongside HMS Victory and USS Constitution tracks](/assets/images/future-debrief/shipped-scene-playback-fidelity/featurelist-grouping-light.png)
+*The new Storyboard row in `FeatureList` — one collapsible parent with a `(5)` scene-count badge, sitting alongside tracks instead of cluttered between them.*
+
+![FeatureList expanded — Engagement Brief row reveals Scene 1 through Scene 5; an Empty Storyboard row below shows (0) and a disabled chevron](/assets/images/future-debrief/shipped-scene-playback-fidelity/featurelist-grouping-expanded-light.png)
+*Expanded, the parent reveals its five scene children indented one level. An empty storyboard (bottom) still renders with `(0)` and a disabled chevron — FR-013 — so authors never lose track of a storyboard whose contents they're about to capture.*
 
 ## How It Fits
 
