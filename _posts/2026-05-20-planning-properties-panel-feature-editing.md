@@ -29,6 +29,10 @@ Vertex annotation reaches across geometry types. Polygon, LineString, MultiPoint
 - **Closing the silent-save gap.** Spec 192 also closes Article I.3 from `/speckit.review`: an integrated save-path test asserts the writer is called exactly once, `appendProvenance` runs once per affected feature, the staging buffer survives `EACCES` / `EPERM` / `ReadOnlyFilesystemError`, and a read-only banner appears after a failed save. A new `plot` slice on `@debrief/session-state` exposes `isReadOnly` / `readOnlyReason`.
 - **Multi-feature selection becomes a first-class signal.** `MapView.onSelect` changes payload shape to carry a feature array (one breaking change, same prop name, three consumers updated). Ctrl/Cmd-click on the map and on the Layers panel emit the same multi-select event, so the panel can render a summary mode with shared-field editing.
 
+## Screenshots to Follow
+
+No screenshots in this post — implementation is in flight on PR #641, and the spec schedules visual capture (Storybook renders of each editing mode, the read-only banner, and the override-revert affordance) for the Polish phase. We'll fold them into the "Shipped" post when the feature lands.
+
 ## What We'd Love Feedback On
 
 - The read-only signal is derived from writer capability and save-time filesystem errors. Are there other read-only signals (workspace settings, file ownership, network FS quirks) worth folding in?
